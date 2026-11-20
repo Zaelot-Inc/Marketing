@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CMS Migrations to Contentful | Zaelot</title>
+<meta name="description" content="AI agents changed the cost and the risk of moving to Contentful. How Zaelot runs CMS migrations into Contentful for marketing teams.">
+<style>
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url(data:font/woff2;base64,{{FONT}}) format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --thunder: #211E20;
+  --white: #FFFFFF;
+  --dove-gray: #707070;
+  --slate-gray: #B0B0B0;
+  --mercury: #E5E5E5;
+  --wild-sand: #F5F5F5;
+  /* Co-brand accent (Zaelot + Contentful): Contentful blue sampled from the Contentful logo.
+     Replaces zaelow per co-branding.md. */
+  --accent: #1773EA;        /* rules, numerals, borders (3:1 graphic) */
+  --accent-ink: #1466CF;    /* accent text on white 5.48:1; white text on it 5.48:1 */
+  --accent-deep: #0F5BBF;   /* hover */
+  --accent-on-dark: #6AA8F5;/* accent text on thunder */
+  --font: 'Instrument Sans', system-ui, sans-serif;
+  --web-hero: clamp(34px, 5vw, 64px);
+  --web-h2: clamp(22px, 3vw, 40px);
+  --web-h3: clamp(17px, 1.6vw, 21px);
+  --web-body: clamp(15px, 1.2vw, 17px);
+  --web-max-width: 1200px;
+  --web-margin-x: clamp(16px, 5vw, 80px);
+  --web-section-gap: clamp(56px, 8vw, 104px);
+  --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 40px; --s-6: 48px; --s-8: 64px;
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(33,30,32,0.08);
+  --shadow-md: 0 4px 12px rgba(33,30,32,0.10);
+  --dp-focus-outline-light: 3px solid #211E20;
+  --dp-focus-outline-dark-white: 3px solid #FFFFFF;
+  --dp-btn-secondary-dark-text: #FFFFFF;
+  --dp-btn-secondary-dark-border: rgba(255,255,255,0.35);
+  --dp-btn-secondary-dark-bg-hover: rgba(255,255,255,0.08);
+  --dp-btn-secondary-dark-border-hover: rgba(255,255,255,0.60);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--font);
+  font-size: var(--web-body);
+  line-height: 1.6;
+  color: var(--thunder);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; }
+a { color: inherit; }
+.wrap { max-width: var(--web-max-width); margin: 0 auto; padding: 0 var(--web-margin-x); }
+.cf { color: var(--accent-ink); font-weight: 500; }
+
+/* Skip link */
+.skip {
+  position: absolute; left: 16px; top: -48px;
+  background: var(--white); color: var(--thunder);
+  padding: 8px 14px; border-radius: var(--radius-sm); z-index: 100; font-weight: 700;
+}
+.skip:focus { top: 12px; outline: var(--dp-focus-outline-light); }
+
+/* Nav */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--thunder);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--s-3); min-height: 68px;
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand img { height: 22px; width: auto; }
+.brand .zaelot svg { height: 20px; width: auto; }
+.brand .plus { color: var(--slate-gray); font-size: 14px; }
+.site-nav ul { list-style: none; display: none; gap: 4px; }
+.site-nav a {
+  display: block; padding: 8px 10px; border-radius: var(--radius-sm);
+  color: #E5E5E5; text-decoration: none; font-size: 14px; font-weight: 500;
+}
+.site-nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+.site-nav a[aria-current="true"] { color: var(--white); box-shadow: inset 0 -2px 0 var(--accent-on-dark); }
+.site-nav a:focus-visible, .brand:focus-visible { outline: var(--dp-focus-outline-dark-white); outline-offset: 2px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font); font-weight: 700; font-size: 15px;
+  padding: 12px 22px; border-radius: var(--radius-md);
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s;
+}
+.btn svg { width: 16px; height: 16px; }
+.btn-primary { background: var(--accent-ink); color: var(--white); border: 2px solid var(--accent-ink); }
+.btn-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+.btn-primary:focus-visible { outline: var(--dp-focus-outline-dark-white); outline-offset: 3px; }
+.btn-ghost {
+  background: transparent; color: var(--dp-btn-secondary-dark-text);
+  border: 1.5px solid var(--dp-btn-secondary-dark-border);
+  padding: 9px 16px; font-size: 14px;
+}
+.btn-ghost:hover { background: var(--dp-btn-secondary-dark-bg-hover); border-color: var(--dp-btn-secondary-dark-border-hover); }
+.btn-ghost:focus-visible { outline: var(--dp-focus-outline-dark-white); outline-offset: 3px; }
+
+/* Hero */
+.hero { background: var(--thunder); color: var(--white); padding: clamp(48px, 8vw, 112px) 0 clamp(48px, 7vw, 96px); }
+.hero .rule { width: 64px; height: 4px; border-radius: 2px; background: var(--accent); margin-bottom: var(--s-3); }
+.hero h1 {
+  font-size: var(--web-hero); line-height: 1.05; font-weight: 700;
+  letter-spacing: -0.015em; max-width: 15em;
+}
+.hero .dek { margin-top: var(--s-3); font-size: clamp(17px, 1.6vw, 21px); line-height: 1.5; color: #E5E5E5; max-width: 36em; }
+.hero .byline { margin-top: var(--s-3); font-size: 14px; color: var(--slate-gray); }
+
+/* Sections */
+section { padding: var(--web-section-gap) 0 0; }
+section:last-of-type { padding-bottom: var(--web-section-gap); }
+h2 { font-size: var(--web-h2); line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; margin-bottom: var(--s-4); max-width: 22em; }
+h3 { font-size: var(--web-h3); line-height: 1.3; font-weight: 700; margin-bottom: var(--s-1); }
+p + p { margin-top: var(--s-2); }
+
+.intro { display: grid; gap: var(--s-4); }
+.intro .lead { font-size: clamp(19px, 1.9vw, 25px); line-height: 1.45; font-weight: 500; }
+
+/* Outcome cards */
+.cards { list-style: none; display: grid; gap: var(--s-2); }
+.card {
+  background: var(--wild-sand);
+  border: 1px solid var(--mercury);
+  border-radius: var(--radius-md);
+  padding: var(--s-3);
+  box-shadow: var(--shadow-sm);
+}
+.card.stat { background: var(--white); border: 2px solid var(--accent); }
+.figure { font-size: clamp(44px, 5vw, 64px); font-weight: 700; line-height: 1; color: var(--accent-ink); margin-bottom: var(--s-1); }
+.figure-label { font-size: var(--web-h3); font-weight: 700; margin-bottom: var(--s-1); }
+
+/* Old way */
+.oldway { display: grid; gap: var(--s-5); align-items: start; }
+.oldlist { list-style: none; counter-reset: s; margin-top: var(--s-2); }
+.oldlist li { counter-increment: s; position: relative; padding: 0 0 var(--s-2) 44px; }
+.oldlist li::before {
+  content: counter(s); position: absolute; left: 0; top: 0;
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1.5px solid var(--dove-gray); color: var(--dove-gray);
+  font-size: 13px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.callout {
+  border-left: 4px solid var(--thunder);
+  padding: 4px 0 4px var(--s-3);
+  font-size: clamp(19px, 1.9vw, 24px); line-height: 1.4; font-weight: 500;
+}
+
+/* Two migrations */
+.pair { list-style: none; display: grid; gap: var(--s-4); }
+.pair li { border-top: 3px solid var(--thunder); padding-top: var(--s-2); }
+
+/* Steps */
+.steps-intro { max-width: 40em; margin: calc(-1 * var(--s-2)) 0 var(--s-4); }
+.steps { list-style: none; }
+.steps li {
+  display: grid; grid-template-columns: 44px 1fr; gap: var(--s-2);
+  padding: var(--s-3) 0; border-top: 1px solid var(--mercury);
+}
+.steps li:last-child { border-bottom: 1px solid var(--mercury); }
+.steps .n { font-size: clamp(26px, 2.6vw, 36px); font-weight: 700; line-height: 1; color: var(--accent); }
+.steps p { max-width: 46em; }
+
+.fe-intro { max-width: 44em; margin: calc(-1 * var(--s-2)) 0 var(--s-4); }
+
+/* CTA */
+.cta { background: var(--thunder); color: var(--white); padding: clamp(56px, 8vw, 104px) 0; }
+.cta .wrap { display: grid; gap: var(--s-4); align-items: end; }
+.cta h2 { color: var(--white); margin-bottom: var(--s-2); }
+.cta p { color: #E5E5E5; max-width: 38em; }
+
+/* Footer */
+.site-footer { background: var(--thunder); color: var(--slate-gray); border-top: 1px solid rgba(255,255,255,0.08); padding: var(--s-4) 0; font-size: 14px; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; justify-content: space-between; }
+.site-footer .zaelot svg { height: 22px; width: auto; }
+.site-footer a { color: var(--white); }
+.site-footer a:focus-visible { outline: var(--dp-focus-outline-dark-white); outline-offset: 2px; }
+
+/* Hero proof panel: the numbers the piece came to tell (one highlight: the "with agents" bar) */
+.hero-grid { display: grid; gap: var(--s-6); align-items: end; }
+.proof {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-lg);
+  padding: var(--s-3);
+}
+.proof-label { font-size: 14px; font-weight: 500; color: #E5E5E5; margin-bottom: var(--s-2); }
+.bars { list-style: none; display: grid; gap: 12px; }
+.bars li { display: grid; grid-template-columns: 92px 1fr 36px; gap: 12px; align-items: center; font-size: 14px; }
+.bar-name { color: #E5E5E5; }
+.bar { height: 14px; background: rgba(255,255,255,0.08); border-radius: 7px; overflow: hidden; }
+.fill { display: block; height: 100%; width: var(--w); border-radius: 7px; }
+.fill.old { background: var(--slate-gray); }
+.fill.new { background: var(--accent); }
+.bar-val { font-size: 22px; font-weight: 700; text-align: right; color: var(--white); }
+.proof-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2); margin-top: var(--s-3); padding-top: var(--s-3); border-top: 1px solid rgba(255,255,255,0.14); }
+.proof-split p { margin: 0; }
+.proof-split strong { display: block; font-size: 28px; line-height: 1.1; color: var(--white); }
+.proof-split span { display: block; font-size: 13px; line-height: 1.4; color: #E5E5E5; margin-top: 4px; }
+
+/* Section eyebrows (structural accent) */
+.eyebrow { font-size: 14px; font-weight: 700; color: var(--accent-ink); margin-bottom: var(--s-1); display: flex; gap: 10px; align-items: center; }
+.eyebrow span { font-variant-numeric: tabular-nums; padding-right: 10px; border-right: 1.5px solid var(--accent); }
+
+/* Tinted band for rhythm */
+section.band { background: var(--wild-sand); padding-bottom: var(--web-section-gap); margin-top: var(--web-section-gap); padding-top: var(--web-section-gap); }
+#marketing { padding-bottom: 0; }
+
+/* Diagrams */
+.diagram { margin: 0 0 var(--s-3); background: var(--wild-sand); border: 1px solid var(--mercury); border-radius: var(--radius-md); padding: var(--s-3); }
+.diagram svg { width: 100%; height: auto; max-height: 170px; }
+.pair li { border-top: none; padding-top: 0; }
+
+/* Steps as a timeline */
+.steps li {
+  position: relative;
+  grid-template-columns: 48px 1fr !important;
+  border: none !important;
+  padding: 0 0 var(--s-4);
+}
+.steps li:last-child { padding-bottom: 0; }
+.steps li::before {
+  content: ""; position: absolute; left: 21px; top: 44px; bottom: 4px;
+  width: 2px; background: var(--mercury);
+}
+.steps li:last-child::before { display: none; }
+.steps .n {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 2px solid var(--accent); background: var(--white);
+  color: var(--accent-ink); font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+}
+.steps h3 { margin-top: 9px; }
+
+.cta h2 { font-size: clamp(28px, 4vw, 52px); }
+
+@media (min-width: 1024px) {
+  .hero-grid { grid-template-columns: 1.45fr 1fr; gap: var(--s-8); }
+}
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.no-js .reveal { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+}
+
+/* 768px */
+@media (min-width: 768px) {
+  .intro { grid-template-columns: 1.1fr 1fr; gap: var(--s-6); }
+  .cards { grid-template-columns: 1fr 1fr; gap: var(--s-3); }
+  .oldway { grid-template-columns: 1.2fr 1fr; gap: var(--s-6); }
+  .pair { grid-template-columns: 1fr 1fr; gap: var(--s-5); }
+  .steps li { grid-template-columns: 72px 1fr; }
+  .cta .wrap { grid-template-columns: 1.6fr auto; }
+}
+/* 1280px */
+@media (min-width: 1280px) {
+  .site-nav ul { display: flex; }
+  .cards.three { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .cards.three { grid-template-columns: 1fr 1fr; }
+  .cards.three li:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 479px) {
+  .brand img { height: 18px; }
+  .brand .zaelot svg { height: 16px; }
+  .site-header .btn-ghost { padding: 8px 12px; font-size: 13px; }
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Contentful and Zaelot, back to top">
+      <img src="data:image/png;base64,{{CF_LOGO}}" alt="Contentful">
+      <span class="plus" aria-hidden="true">+</span>
+      <span class="zaelot" aria-hidden="true">{{ZAELOT_WHITE}}</span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="#marketing">For marketing</a></li>
+        <li><a href="#old-way">The old way</a></li>
+        <li><a href="#two-migrations">Two migrations</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#front-end">Front end</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-ghost" href="#contact">Make the case</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="rule" aria-hidden="true"></div>
+        <h1>A quarter of the cost, no launch-day panic: how CMS migrations to Contentful have changed for marketing</h1>
+        <p class="dek">AI agents changed the cost and the risk of moving to Contentful. Read on if your marketing team needs a site refresh.</p>
+        <p class="byline">October 7, 2026 · Ramiro Visca and Jeff Galusha, Zaelot</p>
+      </div>
+      <aside class="proof" aria-label="Recent Zaelot migrations by the numbers">
+        <p class="proof-label">A major migration, in engineer-months</p>
+        <ul class="bars">
+          <li><span class="bar-name">Before</span><span class="bar"><span class="fill old" style="--w:100%"></span></span><span class="bar-val">32</span></li>
+          <li><span class="bar-name">With agents</span><span class="bar"><span class="fill new" style="--w:25%"></span></span><span class="bar-val">8</span></li>
+        </ul>
+        <div class="proof-split">
+          <p><strong>2 days</strong><span>vibe-coded site to a fully Contentful-connected build</span></p>
+          <p><strong>&lt;12 hrs</strong><span>of engineer time for that build</span></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section aria-label="Introduction">
+    <div class="wrap intro reveal">
+      <p class="lead">If your marketing team still needs an engineer to publish a page, the problem isn't the technology anymore. Composable content platforms like <span class="cf">Contentful</span> solved that years ago. What keeps most teams stuck is the cost and risk of getting there.</p>
+      <div>
+        <p>Waiting used to be the safe choice. It isn't now. Every month on an old site is another month search engines and AI assistants struggle to read it. They cite your competitors instead.</p>
+        <p>At Zaelot, a <span class="cf">Contentful</span> partner, AI agents do the page-by-page work of the migration. Our builders and your team make the decisions. If you've been told there's no budget for a migration, share this with your CTO. We'll help you build the case for your executive team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="marketing" aria-labelledby="h-marketing">
+    <div class="wrap">
+      <p class="eyebrow reveal" aria-hidden="true"><span>01</span> For marketing</p>
+      <h2 id="h-marketing" class="reveal">What this means for your marketing team</h2>
+      <ul class="cards">
+        <li class="card reveal">
+          <h3>Your search traffic comes with you.</h3>
+          <p>Every old URL is mapped to the right new page and redirected before launch. Every link is checked. The search value you've built moves to the new site instead of breaking on launch day.</p>
+        </li>
+        <li class="card stat reveal">
+          <p class="figure" aria-hidden="true">¼</p>
+          <h3 class="figure-label">A quarter of the cost, in half the time.</h3>
+          <p>On a major migration, the work dropped from 32 engineer-months to 8, on a timeline at least 50% shorter. On a smaller move off a vibe-coded site, Zaelot delivered a fully Contentful-connected build in 2 days, with under 12 hours of engineer time.</p>
+        </li>
+        <li class="card reveal">
+          <h3>No overtime, no launch-day panic.</h3>
+          <p>The old way meant weeks of overtime for the editorial team and late nights before launch. Now every page is checked before launch. Problems show up early, and there's always a way back.</p>
+        </li>
+        <li class="card reveal">
+          <h3>Your team publishes without waiting on engineers.</h3>
+          <p>The new site is built on the <span class="cf">Contentful</span> content model: reusable content types and building blocks your editors mix and match in <span class="cf">Contentful Studio</span>, with no developer in the loop. The hours that went into copy and paste go into better content.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="old-way" class="band" aria-labelledby="h-old">
+    <div class="wrap">
+      <p class="eyebrow reveal" aria-hidden="true"><span>02</span> The old way</p>
+      <h2 id="h-old" class="reveal">Why migrations used to cost so much</h2>
+      <div class="oldway reveal">
+        <div>
+          <p>For the last 25 years, people did the work, one page at a time:</p>
+          <ol class="oldlist">
+            <li>A project owner lists every page in a spreadsheet.</li>
+            <li>Content editors or junior developers copy each page into the new CMS, fix the links, and re-upload the images.</li>
+            <li>Developers rebuild every page template by hand so the new site can show the content.</li>
+            <li>QA testers check a sample of the work, because checking every page would take too long.</li>
+          </ol>
+        </div>
+        <p class="callout">The bigger the site, the bigger the bill. The pages nobody checked are where broken links and missing content hide until launch day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="two-migrations" aria-labelledby="h-two">
+    <div class="wrap">
+      <p class="eyebrow reveal" aria-hidden="true"><span>03</span> Two migrations</p>
+      <h2 id="h-two" class="reveal">The two migrations we see most often</h2>
+      <ul class="pair">
+        <li class="reveal">
+          <figure class="diagram">
+            <svg viewBox="0 0 320 132" role="img" aria-labelledby="dg1">
+              <title id="dg1">Three separate CMSs feeding into one Contentful space</title>
+              <g font-family="Instrument Sans, system-ui, sans-serif" font-size="12" font-weight="500">
+                <rect x="1" y="6" width="84" height="28" rx="6" fill="#FFFFFF" stroke="#707070"/>
+                <text x="43" y="24" text-anchor="middle" fill="#211E20">CMS A</text>
+                <rect x="1" y="52" width="84" height="28" rx="6" fill="#FFFFFF" stroke="#707070"/>
+                <text x="43" y="70" text-anchor="middle" fill="#211E20">CMS B</text>
+                <rect x="1" y="98" width="84" height="28" rx="6" fill="#FFFFFF" stroke="#707070"/>
+                <text x="43" y="116" text-anchor="middle" fill="#211E20">CMS C</text>
+                <path d="M86 20 C150 20 150 66 206 66 M86 66 L206 66 M86 112 C150 112 150 66 206 66" fill="none" stroke="#B0B0B0" stroke-width="1.5"/>
+                <path d="M200 60 L208 66 L200 72" fill="none" stroke="#707070" stroke-width="1.5"/>
+                <rect x="212" y="40" width="106" height="52" rx="8" fill="#1466CF"/>
+                <text x="265" y="71" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="13">Contentful</text>
+              </g>
+            </svg>
+          </figure>
+          <h3>Several CMSs consolidated into one Contentful space.</h3>
+          <p>Many companies run several CMSs behind one website, each with its own logins, its own way of storing content, and its own copy of things that should live in one place. Done by hand, every extra CMS is a new migration and another line on the estimate. That's why these projects get quoted high and pushed back.</p>
+        </li>
+        <li class="reveal">
+          <figure class="diagram">
+            <svg viewBox="0 0 320 132" role="img" aria-labelledby="dg2">
+              <title id="dg2">A page built from mismatched pieces becomes a page built from reusable content blocks</title>
+              <g font-family="Instrument Sans, system-ui, sans-serif" font-size="11" font-weight="500">
+                <rect x="1" y="1" width="118" height="110" rx="6" fill="#FFFFFF" stroke="#707070"/>
+                <rect x="12" y="12" width="70" height="14" rx="2" fill="#E5E5E5"/>
+                <rect x="30" y="32" width="80" height="22" rx="2" fill="#E5E5E5" transform="rotate(-3 70 43)"/>
+                <rect x="10" y="60" width="44" height="30" rx="2" fill="#E5E5E5"/>
+                <rect x="60" y="64" width="50" height="12" rx="2" fill="#E5E5E5" transform="rotate(4 85 70)"/>
+                <rect x="66" y="82" width="34" height="18" rx="2" fill="#E5E5E5"/>
+                <text x="60" y="128" text-anchor="middle" fill="#707070">Each page built differently</text>
+                <path d="M132 56 L184 56" stroke="#B0B0B0" stroke-width="1.5"/>
+                <path d="M178 50 L186 56 L178 62" fill="none" stroke="#707070" stroke-width="1.5"/>
+                <rect x="199" y="1" width="118" height="110" rx="6" fill="#FFFFFF" stroke="#1466CF" stroke-width="1.5"/>
+                <rect x="210" y="12" width="96" height="14" rx="2" fill="#1773EA" opacity="0.9"/>
+                <rect x="210" y="32" width="96" height="30" rx="2" fill="none" stroke="#1773EA" stroke-width="1.5"/>
+                <rect x="210" y="68" width="45" height="32" rx="2" fill="none" stroke="#1773EA" stroke-width="1.5"/>
+                <rect x="261" y="68" width="45" height="32" rx="2" fill="none" stroke="#1773EA" stroke-width="1.5"/>
+                <text x="258" y="128" text-anchor="middle" fill="#211E20">Reusable content blocks</text>
+              </g>
+            </svg>
+          </figure>
+          <h3>A vibe-coded or no-code site your team has outgrown.</h3>
+          <p>No-code tools (Builder, Framer) and vibe-coding tools (Lovable, Bolt, v0) get a site live fast. As it grows, every page ends up built a little differently, content gets stuck in the design, and search engines and AI assistants struggle to read it. These sites rarely export cleanly.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="h-how">
+    <div class="wrap">
+      <p class="eyebrow reveal" aria-hidden="true"><span>04</span> How it works</p>
+      <h2 id="h-how" class="reveal">How AI makes the move to Contentful easier</h2>
+      <p class="steps-intro reveal">Here's what changes when builders work with agents. Zaelot runs these migrations into <span class="cf">Contentful</span>.</p>
+      <ol class="steps">
+        <li class="reveal"><span class="n" aria-hidden="true">1</span><div><h3>Every page gets looked at first.</h3><p>An agent goes through the whole site and sorts every page by type. When the structure was never written down, it reads the pages and the code together. Pages that don't fit get flagged with a reason. Each extra source CMS is a small added step.</p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">2</span><div><h3>The content model gets written down, and people make the decisions.</h3><p>Your team and Zaelot's builders agree on the <span class="cf">Contentful</span> content model: the content types every page will be built from. Agents suggest where each piece of old content should go. Your team and ours approve or change each suggestion. Nothing gets deleted without a person signing off.</p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">3</span><div><h3>The new site gets built from the plan.</h3><p>Agents build each template and its building blocks from the same content model, so the content in <span class="cf">Contentful</span> and the site fit together from day one. Done by hand, this front-end build can take a team months. With agents, our builders spend that time reviewing code. Every piece is reviewed before it goes live.</p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">4</span><div><h3>Every page gets checked.</h3><p>Machines compare the old site to the new one: every field, link, image, and redirect, in every language, plus how each page looks. Anything that doesn't match goes to a person, before launch day instead of after.</p></div></li>
+        <li class="reveal"><span class="n" aria-hidden="true">5</span><div><h3>Launch gets rehearsed until it's boring.</h3><p>Because the process runs automatically, the team can do full practice runs again and again. On launch day, the old site stays ready as a backup.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="front-end" aria-labelledby="h-front">
+    <div class="wrap">
+      <p class="eyebrow reveal" aria-hidden="true"><span>05</span> Front end</p>
+      <h2 id="h-front" class="reveal">What a modern front end on Contentful gives you</h2>
+      <p class="fe-intro reveal">Moving the content is half the upgrade. The other half is the front end: the part of the site people, search engines, and AI tools see. Get it right during the migration and you won't pay for another rebuild later.</p>
+      <ul class="cards three">
+        <li class="card reveal">
+          <h3>Search engines and AI assistants can read every page.</h3>
+          <p>Many older sites send an almost empty page and build it in the browser, so Google, Bing, and ChatGPT often see a blank. A modern front end sends every page fully built and fast. SEO depends on that. So do AEO and GEO (showing up in AI answers).</p>
+        </li>
+        <li class="card reveal">
+          <h3>Publish once, use it everywhere.</h3>
+          <p><span class="cf">Contentful</span> delivers content through APIs, so the same content powers your website, app, and any channel you add later. A new front end is also the right time to fix accessibility for screen-reader and keyboard users.</p>
+        </li>
+        <li class="card reveal">
+          <h3>An AI harness keeps the site improving.</h3>
+          <p>The agents and rules that migrated your site stay on after launch. They suggest changes that help your pages show up in AI answers, live only within rules your editorial team sets. Your editors also get <span class="cf">Contentful AI Actions</span> for on-brand copy, SEO, and translation.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<section class="cta" id="contact" aria-labelledby="h-cta">
+  <div class="wrap">
+    <div>
+      <h2 id="h-cta">Ready to make the case?</h2>
+      <p>If a migration to Contentful has been sitting on your roadmap, dig out the last estimate you got. Zaelot will walk your team through what the same project costs today, and help you build the business case for your executive team.</p>
+    </div>
+    <a class="btn btn-primary" href="https://zaelot.com" target="_blank" rel="noopener">Talk to Zaelot
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
+      <span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">(opens in a new tab)</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="zaelot" role="img" aria-label="Zaelot">{{ZAELOT_WHITE}}</span>
+    <p>Contentful partner for CMS migrations · <a href="https://zaelot.com">zaelot.com</a></p>
+  </div>
+</footer>
+
+<script>
+document.body.classList.remove('no-js');
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (e) { io.observe(e); });
+
+  var links = document.querySelectorAll('.site-nav a');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').split('#')[1]] = a; });
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting && map[e.target.id]) {
+        links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        map[e.target.id].setAttribute('aria-current', 'true');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  Object.keys(map).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
+})();
+</script>
+</body>
+</html>

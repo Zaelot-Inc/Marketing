@@ -1,0 +1,5 @@
+.DS_Store
+Icon?
+.claude-mpm/
+*.bak*
+.~lock.*#

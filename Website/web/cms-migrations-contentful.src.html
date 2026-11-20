@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CMS Migrations to Contentful</title>
+<style>
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url(data:font/woff2;base64,{{FONT}}) format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+}
+:root {
+  --thunder: #211E20;
+  --white: #FFFFFF;
+  --dove-gray: #707070;
+  --mercury: #E5E5E5;
+  --wild-sand: #F5F5F5;
+  /* Co-brand accent: Contentful blue, sampled from the Contentful logo */
+  --accent: #1773EA;      /* fills, rules, numerals (graphic 3:1) */
+  --accent-ink: #1466CF;  /* accent text on white, 5.48:1 */
+  --font: 'Instrument Sans', system-ui, sans-serif;
+  --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px;
+  --radius-sm: 4px; --radius-md: 8px;
+}
+@page { size: Letter; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: var(--font);
+  color: var(--thunder);
+  background: #d9d9d9;
+  font-size: 8.9pt;
+  line-height: 1.38;
+}
+.page {
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto 24px;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@media print {
+  body { background: var(--white); }
+  .page { margin: 0; break-after: page; }
+  .page:last-child { break-after: auto; }
+}
+.inner { padding: 0 0.6in; }
+
+/* Masthead */
+.masthead {
+  background: var(--thunder);
+  color: var(--white);
+  padding: 0.32in 0.6in 0.26in;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0.2in;
+}
+.logos img { height: 22px; width: auto; display: block; }
+.logos .zaelot svg { height: 20px; width: auto; display: block; }
+.logos .x { color: #B0B0B0; font-size: 11pt; }
+.masthead h1 {
+  font-size: 21pt;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  max-width: 6.4in;
+}
+.masthead h1 .rule {
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.dek {
+  margin-top: 9px;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: #E5E5E5;
+  max-width: 6in;
+}
+.byline { margin-top: 8px; font-size: 8.5pt; color: #B0B0B0; }
+
+/* Body */
+p + p { margin-top: 7px; }
+h2 {
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+h2 .num { color: var(--accent-ink); margin-right: 6px; }
+h3 { font-size: 10pt; font-weight: 700; line-height: 1.25; margin-bottom: 3px; }
+section { margin-top: 0.17in; }
+strong { font-weight: 700; }
+.cf { color: var(--accent-ink); font-weight: 500; }
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3in;
+  margin-top: 0.2in;
+  font-size: 9.2pt;
+}
+.intro .lead { font-size: 10.6pt; line-height: 1.38; font-weight: 500; }
+
+/* Outcome grid */
+.outcomes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.outcomes li {
+  background: var(--wild-sand);
+  border: 1px solid var(--mercury);
+  border-radius: var(--radius-md);
+  padding: 9px 12px;
+}
+.outcomes li.stat {
+  background: var(--white);
+  border: 2px solid var(--accent);
+}
+.figure {
+  font-size: 20pt;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-ink);
+  margin-bottom: 6px;
+}
+.figure small { font-size: 10pt; font-weight: 500; color: var(--thunder); margin-left: 4px; }
+
+/* Old way */
+.oldway {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 0.3in;
+  align-items: start;
+}
+.oldway ol { list-style: none; counter-reset: s; }
+.oldway ol li {
+  counter-increment: s;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 5px;
+}
+.oldway ol li::before {
+  content: counter(s);
+  position: absolute; left: 0; top: 0;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--dove-gray);
+  color: var(--dove-gray);
+  font-size: 8pt; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.callout {
+  border-left: 3px solid var(--thunder);
+  padding: 2px 0 2px 14px;
+  font-size: 9.8pt;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.pagefoot {
+  margin-top: auto;
+  padding: 0.1in 0.6in 0.28in;
+  display: flex;
+  justify-content: space-between;
+  font-size: 7.5pt;
+  color: var(--dove-gray);
+}
+
+/* Page 2 */
+.p2top { padding-top: 0.34in; padding-bottom: 0.2in; }
+.twomig {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25in;
+}
+.twomig li { border-top: 2px solid var(--thunder); padding-top: 9px; }
+
+.steps { list-style: none; }
+.steps li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  padding: 5px 0;
+  border-top: 1px solid var(--mercury);
+}
+.steps li:last-child { border-bottom: 1px solid var(--mercury); }
+.steps .n {
+  font-size: 15pt;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+.steps p { margin: 0; }
+.howintro { margin-bottom: 10px; }
+
+.frontend {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.frontend li {
+  background: var(--wild-sand);
+  border: 1px solid var(--mercury);
+  border-radius: var(--radius-md);
+  padding: 9px 11px;
+  font-size: 8.5pt;
+}
+.frontend h3 { font-size: 9.6pt; }
+
+.cta {
+  margin-top: auto;
+  background: var(--thunder);
+  color: var(--white);
+  padding: 0.24in 0.6in 0.26in;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 0.35in;
+  align-items: end;
+}
+.cta h2 { color: var(--white); font-size: 15pt; margin-bottom: 8px; }
+.cta p { color: #E5E5E5; font-size: 9.4pt; }
+.cta .contact { font-size: 9pt; color: #E5E5E5; }
+.cta .contact .zaelot svg { height: 22px; width: auto; display: block; margin-bottom: 10px; }
+.cta a { color: var(--white); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--accent); }
+.cta a:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Screen-only fallback for narrow viewports */
+@media screen and (max-width: 768px) {
+  body { background: var(--white); }
+  .page { width: 100%; height: auto; margin: 0; }
+  .intro, .outcomes, .oldway, .twomig, .frontend, .cta { grid-template-columns: 1fr; }
+  .inner, .masthead, .cta, .pagefoot { padding-left: 16px; padding-right: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Page 1 -->
+<article class="page" aria-label="Page 1">
+  <header class="masthead">
+    <div class="logos">
+      <img src="data:image/png;base64,{{CF_LOGO}}" alt="Contentful">
+      <span class="x" aria-hidden="true">+</span>
+      <span class="zaelot" role="img" aria-label="Zaelot">{{ZAELOT_WHITE}}</span>
+    </div>
+    <h1><span class="rule" aria-hidden="true"></span>A quarter of the cost, no launch-day panic: how CMS migrations to Contentful have changed for marketing</h1>
+    <p class="dek">AI agents changed the cost and the risk of moving to Contentful. Read on if your marketing team needs a site refresh.</p>
+    <p class="byline">October 7, 2026 · Ramiro Visca and Jeff Galusha, Zaelot</p>
+  </header>
+
+  <main class="inner">
+    <div class="intro">
+      <p class="lead">If your marketing team still needs an engineer to publish a page, the problem isn't the technology anymore. Composable content platforms like <span class="cf">Contentful</span> solved that years ago. What keeps most teams stuck is the cost and risk of getting there.</p>
+      <div>
+        <p>Waiting used to be the safe choice. It isn't now. Every month on an old site is another month search engines and AI assistants struggle to read it. They cite your competitors instead.</p>
+        <p>At Zaelot, a <span class="cf">Contentful</span> partner, AI agents do the page-by-page work of the migration. Our builders and your team make the decisions. If you've been told there's no budget for a migration, share this with your CTO. We'll help you build the case for your executive team.</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="h-marketing">
+      <h2 id="h-marketing">What this means for your marketing team</h2>
+      <ul class="outcomes">
+        <li>
+          <h3>Your search traffic comes with you.</h3>
+          <p>Every old URL is mapped to the right new page and redirected before launch. Every link is checked. The search value you've built moves to the new site instead of breaking on launch day.</p>
+        </li>
+        <li class="stat">
+          <p class="figure">¼ <small>the cost, in half the time</small></p>
+          <p>On a major migration, the work dropped from 32 engineer-months to 8, on a timeline at least 50% shorter. On a smaller move off a vibe-coded site, Zaelot delivered a fully Contentful-connected build in 2 days, with under 12 hours of engineer time.</p>
+        </li>
+        <li>
+          <h3>No overtime, no launch-day panic.</h3>
+          <p>The old way meant weeks of overtime for the editorial team and late nights before launch. Now every page is checked before launch. Problems show up early, and there's always a way back.</p>
+        </li>
+        <li>
+          <h3>Your team publishes without waiting on engineers.</h3>
+          <p>The new site is built on the <span class="cf">Contentful</span> content model: reusable content types and building blocks your editors mix and match in <span class="cf">Contentful Studio</span>, with no developer in the loop. The hours that went into copy and paste go into better content.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-oldway">
+      <h2 id="h-oldway">Why migrations used to cost so much</h2>
+      <div class="oldway">
+        <div>
+          <p style="margin-bottom:8px">For the last 25 years, people did the work, one page at a time:</p>
+          <ol>
+            <li>A project owner lists every page in a spreadsheet.</li>
+            <li>Content editors or junior developers copy each page into the new CMS, fix the links, and re-upload the images.</li>
+            <li>Developers rebuild every page template by hand so the new site can show the content.</li>
+            <li>QA testers check a sample of the work, because checking every page would take too long.</li>
+          </ol>
+        </div>
+        <p class="callout">The bigger the site, the bigger the bill. The pages nobody checked are where broken links and missing content hide until launch day.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pagefoot"><span>CMS migrations to Contentful · Zaelot</span><span>1 / 2</span></footer>
+</article>
+
+<!-- Page 2 -->
+<article class="page" aria-label="Page 2">
+  <main class="inner p2top">
+    <section aria-labelledby="h-two" style="margin-top:0">
+      <h2 id="h-two">The two migrations we see most often</h2>
+      <ul class="twomig">
+        <li>
+          <h3>Several CMSs consolidated into one Contentful space.</h3>
+          <p>Many companies run several CMSs behind one website, each with its own logins, its own way of storing content, and its own copy of things that should live in one place. Done by hand, every extra CMS is a new migration and another line on the estimate. That's why these projects get quoted high and pushed back.</p>
+        </li>
+        <li>
+          <h3>A vibe-coded or no-code site your team has outgrown.</h3>
+          <p>No-code tools (Builder, Framer) and vibe-coding tools (Lovable, Bolt, v0) get a site live fast. As it grows, every page ends up built a little differently, content gets stuck in the design, and search engines and AI assistants struggle to read it. These sites rarely export cleanly.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-how">
+      <h2 id="h-how">How AI makes the move to Contentful easier</h2>
+      <p class="howintro">Here's what changes when builders work with agents. Zaelot runs these migrations into <span class="cf">Contentful</span>.</p>
+      <ol class="steps">
+        <li><span class="n" aria-hidden="true">1</span><div><h3>Every page gets looked at first.</h3><p>An agent goes through the whole site and sorts every page by type. When the structure was never written down, it reads the pages and the code together. Pages that don't fit get flagged with a reason. Each extra source CMS is a small added step.</p></div></li>
+        <li><span class="n" aria-hidden="true">2</span><div><h3>The content model gets written down, and people make the decisions.</h3><p>Your team and Zaelot's builders agree on the <span class="cf">Contentful</span> content model: the content types every page will be built from. Agents suggest where each piece of old content should go. Your team and ours approve or change each suggestion. Nothing gets deleted without a person signing off.</p></div></li>
+        <li><span class="n" aria-hidden="true">3</span><div><h3>The new site gets built from the plan.</h3><p>Agents build each template and its building blocks from the same content model, so the content in <span class="cf">Contentful</span> and the site fit together from day one. Done by hand, this front-end build can take a team months. With agents, our builders spend that time reviewing code. Every piece is reviewed before it goes live.</p></div></li>
+        <li><span class="n" aria-hidden="true">4</span><div><h3>Every page gets checked.</h3><p>Machines compare the old site to the new one: every field, link, image, and redirect, in every language, plus how each page looks. Anything that doesn't match goes to a person, before launch day instead of after.</p></div></li>
+        <li><span class="n" aria-hidden="true">5</span><div><h3>Launch gets rehearsed until it's boring.</h3><p>Because the process runs automatically, the team can do full practice runs again and again. On launch day, the old site stays ready as a backup.</p></div></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="h-front">
+      <h2 id="h-front">What a modern front end on Contentful gives you</h2>
+      <p style="margin-bottom:10px">Moving the content is half the upgrade. The other half is the front end: the part of the site people, search engines, and AI tools see. Get it right during the migration and you won't pay for another rebuild later.</p>
+      <ul class="frontend">
+        <li><h3>Search engines and AI assistants can read every page.</h3><p>Many older sites send an almost empty page and build it in the browser, so Google, Bing, and ChatGPT often see a blank. A modern front end sends every page fully built and fast. SEO depends on that. So do AEO and GEO (showing up in AI answers).</p></li>
+        <li><h3>Publish once, use it everywhere.</h3><p><span class="cf">Contentful</span> delivers content through APIs, so the same content powers your website, app, and any channel you add later. A new front end is also the right time to fix accessibility for screen-reader and keyboard users.</p></li>
+        <li><h3>An AI harness keeps the site improving.</h3><p>The agents and rules that migrated your site stay on after launch. They suggest changes that help your pages show up in AI answers, live only within rules your editorial team sets. Your editors also get <span class="cf">Contentful AI Actions</span> for on-brand copy, SEO, and translation.</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="cta">
+    <div>
+      <h2>Ready to make the case?</h2>
+      <p>If a migration to Contentful has been sitting on your roadmap, dig out the last estimate you got. Zaelot will walk your team through what the same project costs today, and help you build the business case for your executive team.</p>
+    </div>
+    <div class="contact">
+      <span class="zaelot" role="img" aria-label="Zaelot">{{ZAELOT_WHITE}}</span>
+      <p>Contentful partner for CMS migrations.<br>Talk to us at <a href="https://zaelot.com">zaelot.com</a></p>
+    </div>
+  </footer>
+</article>
+
+</body>
+</html>

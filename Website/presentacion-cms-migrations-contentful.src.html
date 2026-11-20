@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your CMS Doesn't Have to Suck · Contentful + Zaelot</title>
+<!--
+  OUTLINE (slide → archetype)
+  1. cover            (dark)  Headline + the shelved quote as a struck-through line item
+  2. text-media       (light) Reframe + the four manual steps | flat-panel dark: 32 engineer-months = the $500K quote
+  3. quote-statement  (dark)  Shelving it wasn't a budget decision. It was a visibility decision.
+  4. metric-hero      (light) ¼ the cost, ~3 months, animated 32 → 8 bar, 2 days / <12 hrs
+  5. closing-contact  (dark)  Send us the quote. What your team gets + contact
+  Branding: Zaelot + Contentful co-brand. Accent = Contentful blue (sampled from the Contentful logo)
+  in place of zaelow: #1773EA fills/rules, #1466CF text on white (5.48:1), #6AA8F5 text on thunder (6.71:1).
+-->
+<style>
+@font-face{font-family:'Instrument Sans';src:url(data:font/woff2;base64,{{FONT}}) format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --thunder:#211E20; --white:#FFFFFF; --dove:#707070; --slate:#B0B0B0; --mercury:#E5E5E5; --wild:#F5F5F5;
+  --accent:#1773EA; --accent-ink:#1466CF; --accent-on-dark:#6AA8F5;
+  --font:'Instrument Sans',system-ui,sans-serif;
+  --pad:clamp(40px,5vw,80px); --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:var(--font);background:var(--thunder);color:var(--thunder);-webkit-font-smoothing:antialiased;overflow:hidden}
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--white);padding:var(--pad) var(--pad) 0;
+  opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility .5s}
+.slide.active{opacity:1;visibility:visible;z-index:2}
+.slide.dark{background:var(--thunder);color:var(--white)}
+.slide:focus{outline:none}
+
+/* Header: co-brand lockup top-left, its own band */
+.deck-header{flex:none;height:32px;display:flex;align-items:center;gap:14px;margin-bottom:clamp(28px,5vh,56px)}
+.deck-header img{height:24px;width:auto;display:block}
+.deck-header .zl svg{height:22px;width:auto;display:block}
+.deck-header .plus{font-size:16px;color:var(--slate)}
+.slide-body{flex:1;display:flex;min-height:0;padding-bottom:calc(var(--pad) + 32px)}
+
+/* Footer chrome: deck label left; counter + nav right (option A, own zone) */
+.chrome{position:absolute;left:var(--pad);right:var(--pad);bottom:clamp(20px,3vh,32px);display:flex;align-items:center;justify-content:space-between;font-size:13px;letter-spacing:.02em;color:var(--dove);z-index:5}
+.slide.dark .chrome{color:var(--slate)}
+
+h1{font-size:clamp(48px,7.4vw,124px);font-weight:700;line-height:.98;letter-spacing:-.035em}
+h2{font-size:clamp(32px,4vw,60px);font-weight:700;line-height:1.04;letter-spacing:-.025em}
+.eyebrow{font-size:16px;font-weight:700;color:var(--accent-ink);margin-bottom:16px;display:flex;gap:10px;align-items:center}
+.eyebrow span{padding-right:10px;border-right:2px solid var(--accent)}
+.slide.dark .eyebrow{color:var(--accent-on-dark)}
+.lead{font-size:clamp(18px,1.55vw,24px);line-height:1.45;color:var(--dove);max-width:52ch}
+.slide.dark .lead{color:var(--slate)}
+.hl{color:var(--accent-on-dark)}
+.hl-ink{color:var(--accent-ink)}
+.rule{width:72px;height:4px;border-radius:2px;background:var(--accent)}
+
+/* 1 · Cover */
+.cover-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(32px,5vw,96px);align-items:center;width:100%}
+.cover-grid .lead{margin-top:2rem}
+.cover-date{margin-top:20px;font-size:16px;color:var(--slate)}
+.receipt{border:1px solid #3a3638;border-radius:16px;padding:clamp(24px,2.4vw,36px);background:#2b2729}
+.receipt .k{font-size:16px;color:var(--slate);margin-bottom:18px}
+.receipt .row{display:flex;justify-content:space-between;align-items:baseline;font-size:clamp(18px,1.6vw,24px);padding:14px 0;border-top:1px solid #3a3638}
+.receipt .old{color:var(--slate);text-decoration:line-through;text-decoration-color:var(--accent-on-dark);text-decoration-thickness:3px}
+.receipt .new{font-weight:700;color:var(--white)}
+.receipt .new b{color:var(--accent-on-dark)}
+.receipt .foot{margin-top:18px;font-size:16px;color:var(--slate)}
+
+/* 2 · Quote breakdown */
+.split{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,5vw,80px);align-items:stretch;width:100%}
+.steps-old{list-style:none;counter-reset:s;margin-top:clamp(20px,3vh,32px);display:grid;gap:14px;max-width:58ch}
+.steps-old li{counter-increment:s;position:relative;padding-left:44px;font-size:clamp(16px,1.3vw,20px);line-height:1.4;color:var(--thunder)}
+.steps-old li::before{content:counter(s);position:absolute;left:0;top:-1px;width:28px;height:28px;border-radius:50%;border:2px solid var(--thunder);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.vpanel{border-radius:16px;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,3vw,52px)}
+.vpanel.dark{background:var(--thunder);color:var(--white)}
+.vpanel .big{font-size:clamp(88px,11vw,180px);font-weight:700;line-height:.85;letter-spacing:-.04em}
+.vpanel .unit{font-size:clamp(20px,1.8vw,28px);font-weight:500;margin-top:10px;color:var(--slate)}
+.vpanel .eq{margin-top:clamp(20px,3vh,36px);padding-top:clamp(16px,2.4vh,28px);border-top:1px solid #3a3638;font-size:clamp(18px,1.55vw,24px);line-height:1.4;color:var(--mercury)}
+.vpanel .eq strong{color:var(--white)}
+
+/* 3 · Statement */
+.statement{display:flex;flex-direction:column;justify-content:center;width:100%}
+.statement .pre{font-size:clamp(22px,2.4vw,36px);font-weight:500;color:var(--slate);margin-bottom:18px}
+.statement blockquote{font-size:clamp(44px,6.4vw,104px);font-weight:700;line-height:1.02;letter-spacing:-.035em;max-width:16ch}
+.statement .post{margin-top:clamp(28px,5vh,56px);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;max-width:62ch}
+.statement .post .bar{width:4px;height:100%;background:var(--accent);border-radius:2px}
+.statement .post p{font-size:clamp(18px,1.55vw,24px);line-height:1.45;color:var(--mercury)}
+
+.statement-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(32px,5vw,96px);align-items:center;width:100%}
+.chat{display:flex;flex-direction:column;gap:16px}
+.chat .bubble{border-radius:18px;padding:18px 22px;font-size:clamp(16px,1.3vw,20px);line-height:1.45}
+.chat .you{align-self:flex-end;max-width:85%;background:#3a3638;color:var(--white);border-bottom-right-radius:6px}
+.chat .ai{background:#2b2729;border:1px solid #3a3638;color:var(--mercury);border-bottom-left-radius:6px}
+.chat .sources{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chat .src{font-size:16px;border:1px solid #4a4648;border-radius:999px;padding:4px 12px;color:var(--mercury)}
+.chat .src.miss{color:var(--slate);text-decoration:line-through;text-decoration-color:var(--accent-on-dark);text-decoration-thickness:2px}
+.chat .src.miss em{font-style:normal;text-decoration:none;display:inline-block;margin-left:6px;color:var(--accent-on-dark)}
+.chat figcaption{font-size:13px;color:var(--slate);text-align:right}
+
+/* 4 · Metric hero */
+.metrics{display:flex;flex-direction:column;justify-content:center;width:100%}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:clamp(24px,4vh,44px)}
+.metric{font-size:clamp(84px,11vw,176px);font-weight:700;letter-spacing:-.045em;line-height:.85}
+.metric .u{color:var(--accent-ink)}
+.metric-cap{margin-top:14px;font-size:clamp(18px,1.55vw,24px);line-height:1.4;color:var(--dove);max-width:30ch}
+.metric-cap strong{color:var(--thunder)}
+.bars{margin-top:clamp(28px,5vh,52px);display:grid;gap:12px;max-width:900px}
+.bars .r{display:grid;grid-template-columns:140px 1fr 70px;gap:16px;align-items:center;font-size:16px;color:var(--dove)}
+.bars .t{height:16px;background:var(--wild);border-radius:8px;overflow:hidden}
+.bars .f{height:100%;border-radius:8px;width:100%;background:var(--slate)}
+.bars .f.new{background:var(--accent);width:100%;transition:width 1.4s var(--ease) .3s}
+.slide.active .bars .f.new{width:25%}
+.bars .v{font-size:22px;font-weight:700;color:var(--thunder);text-align:right}
+.small-stat{margin-top:clamp(20px,3vh,32px);font-size:clamp(16px,1.3vw,20px);color:var(--dove)}
+.small-stat strong{color:var(--thunder)}
+
+/* 5 · Close */
+.close-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,5vw,96px);align-items:center;width:100%}
+.close-grid .lead{margin-top:1.5rem;color:var(--mercury)}
+.gets{list-style:none;display:grid;gap:16px}
+.gets li{position:relative;padding-left:22px;font-size:clamp(16px,1.35vw,21px);line-height:1.4;color:var(--mercury)}
+.gets li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--accent-on-dark)}
+.gets li strong{color:var(--white)}
+.contact{margin-top:clamp(24px,4vh,40px);font-size:18px;color:var(--slate)}
+.contact a{color:var(--white);font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent-on-dark)}
+.contact a:focus-visible{outline:3px solid var(--white);outline-offset:4px}
+.panel-cta{border:1px solid #3a3638;background:#2b2729;border-radius:16px;padding:clamp(24px,2.4vw,40px)}
+.panel-cta .k{font-size:16px;color:var(--slate);margin-bottom:18px}
+
+/* Nav */
+.nav{position:fixed;right:var(--pad);bottom:clamp(14px,2.4vh,24px);display:flex;align-items:center;gap:14px;z-index:10}
+.nav .count{font-size:13px;color:var(--slate);min-width:44px;text-align:center;font-variant-numeric:tabular-nums}
+.nav button{width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);background:rgba(33,30,32,.6);color:var(--white);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.nav button:hover{border-color:rgba(255,255,255,.7)}
+.nav button:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+.nav button:disabled{opacity:.35;cursor:default}
+.nav.light button{border-color:var(--dove);background:var(--white);color:var(--thunder)}
+.nav.light button:focus-visible{outline:3px solid var(--thunder)}
+.nav.light .count{color:var(--dove)}
+.chrome .label{max-width:60%}
+.chrome .spacer{width:160px}
+
+@media(prefers-reduced-motion:reduce){.slide{transition:none}.bars .f.new{transition:none}}
+@media(max-width:900px){
+  .cover-grid,.split,.metric-grid,.close-grid,.statement-grid{grid-template-columns:1fr}
+  .slide{overflow-y:auto}
+  .receipt,.vpanel,.panel-cta,.chat{display:none}
+}
+</style>
+</head>
+<body>
+<main class="deck" id="deck" aria-live="polite" aria-roledescription="slide deck">
+
+  <!-- 1 · COVER -->
+  <section class="slide dark active" aria-label="Slide 1 of 5" tabindex="-1">
+    <header class="deck-header"><img src="data:image/png;base64,{{CF_WHITE}}" alt="Contentful"><span class="plus" aria-hidden="true">+</span><span class="zl" role="img" aria-label="Zaelot">{{Z_WHITE}}</span></header>
+    <div class="slide-body" style="align-items:center">
+      <div class="cover-grid">
+        <div>
+          <div class="rule" aria-hidden="true" style="margin-bottom:3rem"></div>
+          <h1>Your CMS doesn't have to <span class="hl">suck.</span></h1>
+          <p class="lead">Stuck on a CMS that would cost a ton of money and most of a year to leave? With AI agents, a move to Contentful takes a fraction of that, and your team gets AI-ready content.</p>
+          <p class="cover-date">October 2026 · Ramiro Visca and Jeff Galusha</p>
+        </div>
+        <div class="receipt" aria-label="Your old quote versus today">
+          <p class="k">The migration quote you shelved</p>
+          <div class="row"><span>Cost</span><span><span class="old">$500K</span>&nbsp;&nbsp;<span class="new"><b>¼</b> of that</span></span></div>
+          <div class="row"><span>Timeline</span><span><span class="old">8 months</span>&nbsp;&nbsp;<span class="new">about <b>3</b></span></span></div>
+          <p class="foot">Same migration. Agents do the page-by-page work.</p>
+        </div>
+      </div>
+    </div>
+    <div class="chrome"><span class="label">Contentful + Zaelot · CMS migrations</span><span class="spacer"></span></div>
+  </section>
+  <!-- Speaker notes 1: You know the drill. Marketing wants to change a page, so marketing files a ticket. An engineer gets to it next sprint. Meanwhile the campaign has already launched. So you priced fixing it, and the project went on the shelf. -->
+
+  <!-- 2 · TEXT-MEDIA + FLAT PANEL -->
+  <section class="slide" aria-label="Slide 2 of 5" tabindex="-1">
+    <header class="deck-header"><img src="data:image/png;base64,{{CF_DARK}}" alt="Contentful"><span class="plus" aria-hidden="true">+</span><span class="zl" role="img" aria-label="Zaelot">{{Z_DARK}}</span></header>
+    <div class="slide-body">
+      <div class="split">
+        <div style="display:flex;flex-direction:column;justify-content:center">
+          <p class="eyebrow"><span>01</span> What that quote was paying for</p>
+          <h2>That quote was accurate. <span class="hl-ink">For the way migrations used to be done.</span></h2>
+          <ol class="steps-old">
+            <li>A project owner lists every page in a spreadsheet.</li>
+            <li>Editors copy each page into the new CMS, fix the links, re-upload the images.</li>
+            <li>Developers rebuild every page template by hand.</li>
+            <li>QA checks a sample, because checking every page takes too long.</li>
+          </ol>
+        </div>
+        <div class="vpanel dark">
+          <div class="big">32</div>
+          <div class="unit">engineer-months</div>
+          <p class="eq">Four people for eight months. <strong>That's your half-million-dollar quote.</strong> And the bigger the site, the bigger the bill.</p>
+        </div>
+      </div>
+    </div>
+    <div class="chrome"><span class="label">Contentful + Zaelot · CMS migrations</span><span class="spacer"></span></div>
+  </section>
+  <!-- Speaker notes 2: It priced people moving your site by hand, one page at a time. That way of working is gone, and the quote didn't get the memo. The pages nobody checked are where broken links and missing content hide until launch day. -->
+
+  <!-- 3 · QUOTE-STATEMENT -->
+  <section class="slide dark" aria-label="Slide 3 of 5" tabindex="-1">
+    <header class="deck-header"><img src="data:image/png;base64,{{CF_WHITE}}" alt="Contentful"><span class="plus" aria-hidden="true">+</span><span class="zl" role="img" aria-label="Zaelot">{{Z_WHITE}}</span></header>
+    <div class="slide-body">
+      <div class="statement-grid">
+        <div class="statement">
+          <p class="pre">Shelving it wasn't a budget decision.</p>
+          <blockquote>It was a <span class="hl">visibility</span> decision.</blockquote>
+          <div class="post"><span class="bar" aria-hidden="true"></span><p>Today, your customers ask ChatGPT, and it answers with whatever content it can read. If you are on an older CMS, it probably won't be your content.</p></div>
+        </div>
+        <figure class="chat" aria-label="Illustration: an AI assistant answering a customer and citing a competitor's site">
+          <div class="bubble you">Who should we book with for our trip next spring?</div>
+          <div class="bubble ai">
+            <p>Based on what I can read, here are the best options for your dates…</p>
+            <div class="sources"><span class="src">competitor.com</span><span class="src">competitor.com</span><span class="src miss">yoursite.com <em>not readable</em></span></div>
+          </div>
+          <figcaption>Illustration</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="chrome"><span class="label">Contentful + Zaelot · CMS migrations</span><span class="spacer"></span></div>
+  </section>
+  <!-- Speaker notes 3: Every minute your site sits on an old CMS, AI assistants learn to cite someone else. Your team pays for it too: the hours that should go into better content go into tickets and copy and paste. -->
+
+  <!-- 4 · METRIC-HERO -->
+  <section class="slide" aria-label="Slide 4 of 5" tabindex="-1">
+    <header class="deck-header"><img src="data:image/png;base64,{{CF_DARK}}" alt="Contentful"><span class="plus" aria-hidden="true">+</span><span class="zl" role="img" aria-label="Zaelot">{{Z_DARK}}</span></header>
+    <div class="slide-body">
+      <div class="metrics">
+        <p class="eyebrow"><span>02</span> What it costs now · Zaelot's numbers</p>
+        <h2>Agents do the page-by-page work. <span class="hl-ink">People make the decisions.</span></h2>
+        <div class="metric-grid">
+          <div><div class="metric"><span class="u">¼</span></div><p class="metric-cap"><strong>The cost.</strong> A major migration dropped from 32 engineer-months to 8.</p></div>
+          <div><div class="metric"><span class="u">~</span>3<span style="font-size:.38em;letter-spacing:-.01em"> mo</span></div><p class="metric-cap"><strong>The timeline.</strong> More than 60% shorter than the eight-month quote.</p></div>
+        </div>
+        <div class="bars" aria-label="Engineer-months, before and with agents">
+          <div class="r"><span>Before</span><span class="t"><span class="f" style="display:block"></span></span><span class="v">32</span></div>
+          <div class="r"><span>With agents</span><span class="t"><span class="f new" style="display:block"></span></span><span class="v">8</span></div>
+        </div>
+        <p class="small-stat">Smaller move off a vibe-coded site: <strong>2 days</strong> to a fully Contentful-connected build, <strong>under 12 hours</strong> of engineer time.</p>
+      </div>
+    </div>
+    <div class="chrome"><span class="label">Contentful + Zaelot · CMS migrations</span><span class="spacer"></span></div>
+  </section>
+  <!-- Speaker notes 4 (the new way, five steps): 1) Every page gets looked at first: an agent sorts every page by type. 2) The content model gets written down, and people sign off; nothing is deleted without a person. 3) The new site gets built from the plan; builders review code instead of writing every template. 4) Every page gets checked, not a sample: every field, link, image, redirect, in every language. 5) Launch gets rehearsed until it's boring; the old site stays ready as a backup. After setup, more pages mean more computer time, not more people or more months. -->
+
+  <!-- 5 · CLOSING-CONTACT -->
+  <section class="slide dark" aria-label="Slide 5 of 5" tabindex="-1">
+    <header class="deck-header"><img src="data:image/png;base64,{{CF_WHITE}}" alt="Contentful"><span class="plus" aria-hidden="true">+</span><span class="zl" role="img" aria-label="Zaelot">{{Z_WHITE}}</span></header>
+    <div class="slide-body" style="align-items:center">
+      <div class="close-grid">
+        <div>
+          <p class="eyebrow"><span>03</span> Your move</p>
+          <h1 style="font-size:clamp(48px,6.4vw,104px)">Send us <span class="hl">the quote.</span></h1>
+          <p class="lead">If you have an estimate for a migration, dig it up and let's review. We'll go through it line by line and show you what the same migration costs today. Then we'll set you up with materials for your executive team.</p>
+          <p class="contact">Talk to us at <a href="https://zaelot.com" target="_blank" rel="noopener">zaelot.com ↗</a></p>
+        </div>
+        <div class="panel-cta">
+          <p class="k">What your team gets on Contentful</p>
+          <ul class="gets">
+            <li><strong>Publish without an engineer.</strong> Reusable building blocks in Contentful Studio.</li>
+            <li><strong>AI-ready content.</strong> Pages Google and ChatGPT can read and cite.</li>
+            <li><strong>Your search traffic comes with you.</strong> Every old URL mapped and redirected.</li>
+            <li><strong>No launch-day panic.</strong> Every page checked, and a way back.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="chrome"><span class="label">Contentful + Zaelot · CMS migrations</span><span class="spacer"></span></div>
+  </section>
+  <!-- Speaker notes 5: Zaelot is a Contentful partner, and we run these migrations into Contentful. Our builders and your team make the decisions. The agents do the page-by-page work. -->
+</main>
+
+<nav class="nav" id="nav" aria-label="Slide navigation">
+  <button id="prev" aria-label="Previous slide"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg></button>
+  <span class="count" id="count">1 / 5</span>
+  <button id="next" aria-label="Next slide"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></button>
+</nav>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var i=0, nav=document.getElementById('nav'), count=document.getElementById('count');
+  var prev=document.getElementById('prev'), next=document.getElementById('next');
+  function go(n){
+    if(n<0||n>=slides.length) return;
+    slides[i].classList.remove('active'); i=n; slides[i].classList.add('active');
+    count.textContent=(i+1)+' / '+slides.length;
+    nav.classList.toggle('light', !slides[i].classList.contains('dark'));
+    prev.disabled=i===0; next.disabled=i===slides.length-1;
+    slides[i].focus({preventScroll:true});
+  }
+  prev.addEventListener('click',function(){go(i-1)});
+  next.addEventListener('click',function(){go(i+1)});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(i+1)}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1)}
+    else if(e.key==='Home'){go(0)} else if(e.key==='End'){go(slides.length-1)}
+  });
+  var h=location.hash.match(/^#(\d+)$/); go(h?Math.min(Math.max(+h[1]-1,0),slides.length-1):0);
+})();
+</script>
+</body>
+</html>

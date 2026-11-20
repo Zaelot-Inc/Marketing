@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statement of Credit</title>
+<style>
+  @page { size: letter; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #000; }
+  .page {
+    width: 8.5in; height: 11in; position: relative;
+    padding: 0.42in 1.04in 0 1.04in;
+  }
+  .logo { position: absolute; top: 0.3in; right: 1.04in; text-align: right; }
+  .logo img { width: 1.3in; display: block; margin-left: auto; }
+  .logo .tag { font-size: 6.5pt; color: #211E20; margin-top: 1px; letter-spacing: 0.1px; }
+  h1 { font-size: 24pt; font-weight: 700; margin: 0.62in 0 0.16in; }
+  .client { font-size: 30pt; font-weight: 700; margin: 0.88in 0 0.16in; display: flex; align-items: flex-end; gap: 10px; }
+  .client .line { flex: 1; border-bottom: 1px solid #000; height: 0.5in; }
+  .sig .row .line { padding-left: 4px; }
+  h2 { font-size: 15pt; font-weight: 700; margin: 0.16in 0 0.05in; }
+  h3 { font-size: 13pt; font-weight: 700; margin: 0.13in 0 0.05in; }
+  p { font-size: 10.5pt; line-height: 1.42; margin: 0 0 0.08in; text-align: justify; }
+  .credit {
+    border: 1.5px solid #000; padding: 0.12in 0.18in; margin: 0.06in 0 0.08in;
+    display: flex; align-items: baseline; justify-content: space-between;
+  }
+  .credit .amt { font-size: 26pt; font-weight: 700; }
+  .credit .lbl { font-size: 11pt; text-align: right; line-height: 1.4; }
+  ol.terms { margin: 0; padding: 0; list-style: none; }
+  ol.terms li { font-size: 10.5pt; line-height: 1.42; margin: 0 0 0.02in; padding-left: 0.2in; text-indent: -0.2in; text-align: justify; }
+  .sig { display: grid; grid-template-columns: 1fr 1fr; column-gap: 0.4in; margin-top: 0.12in; }
+  .sig .head { font-weight: 700; font-size: 11pt; margin-bottom: 0.06in; }
+  .sig .row { font-size: 11pt; display: flex; gap: 8px; align-items: flex-end; height: 0.3in; }
+  .sig .row .line { flex: 1; border-bottom: 1px solid #000; }
+  .sig .row .line.fit { white-space: nowrap; font-size: 10pt; }
+  .sig .row .signature { font-family: 'Snell Roundhand', 'Apple Chancery', cursive; font-size: 20pt; line-height: 1; padding-bottom: 1px; }
+  .qr { position: absolute; top: 0.3in; left: 1.04in; }
+  .qr img { width: 0.95in; height: 0.95in; display: block; }
+  .footer {
+    position: absolute; left: 1.04in; right: 1.04in; bottom: 0.38in;
+    border-top: 1px solid #000; padding-top: 6px;
+    display: grid; grid-template-columns: 1.9in 2.1in 1fr auto; align-items: start;
+    font-size: 10pt;
+  }
+  .footer img { width: 0.58in; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="logo">
+    <img src="zaelot.svg" alt="Zaelot">
+    <div class="tag">The Right People at the Right Time</div>
+  </div>
+  {{QR_BLOCK}}
+
+  {{CLIENT_BLOCK}}
+
+  <h2>Statement of Credit</h2>
+  <p>This Statement of Credit (this &ldquo;Certificate&rdquo;) is issued as of October 27, 2026 (the &ldquo;Issue Date&rdquo;) by Zaelot Inc. a Delaware C Corp, 30 N Gould St Ste 28612, Sheridan, WY 82801, United States, to the company named above, from now on &ldquo;the holder&rdquo;, in recognition of its participation in the Hightouch Ad Studio Hackathon, New York.</p>
+
+  <h3>1. Credit</h3>
+  <div class="credit">
+    <span class="amt">$10,000 USD</span>
+    <span class="lbl">toward new engineering services<br>from Zaelot Inc.</span>
+  </div>
+
+  <h3>2. Term</h3>
+  <p>The expiration day of this Certificate is July 1, 2027 (&ldquo;Expiration Date&rdquo;). The credit must be applied to a new SOW signed on or before the Expiration Date.</p>
+
+  <h3>3. Conditions</h3>
+  <ol class="terms">
+    <li>a. One Certificate per company.</li>
+    <li>b. No minimum engagement size.</li>
+    <li>c. Applies to new engineering services only, under a new SOW. The credit will be applied against invoices issued under that SOW.</li>
+    <li>d. Non-transferable, not redeemable for cash, not combinable with other discounts, and not applicable to existing SOWs, extensions or renewals.</li>
+    <li>e. Any SOW is subject to mutual agreement on scope, staffing, schedule and commercial terms. This Certificate does not obligate either party to enter into a SOW, and Zaelot may decline any proposed engagement at its sole discretion. Expiry of this Certificate without a signed SOW gives rise to no claim.</li>
+    {{DETAILS_ITEM}}
+  </ol>
+
+  <h3>4. Issuance</h3>
+  <p>IN WITNESS WHEREOF, Zaelot Inc. has issued this Certificate as of the date first above written.</p>
+  <div class="sig">
+    <div>
+      <div class="head">Zaelot Inc.</div>
+      <div class="row">Signatory:<span class="line signature">Germán Clark</span></div>
+      <div class="row">Title:<span class="line">CEO</span></div>
+      <div class="row">Date:<span class="line">10/27/2026</span></div>
+    </div>
+    <div>
+      <div class="head">Acknowledged by Holder</div>
+      <div class="row">Name:<span class="line">{{HOLDER_NAME}}</span></div>
+      <div class="row">Title:<span class="line"></span></div>
+      <div class="row">Date:<span class="line"></span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>&copy; Zaelot, Inc.</span>
+    <span>{{CERT_NO}}</span>
+    <span>Page 1/1</span>
+    <img src="zaelot.svg" alt="">
+  </div>
+</div>
+</body>
+</html>
