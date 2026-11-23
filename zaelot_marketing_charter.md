@@ -21,7 +21,7 @@ Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 | 1 | Grow revenue: more leads, including organic | Projects marketing influenced. First target: identify the first $1 USD attributed to or assisted by marketing (Jeff, 11-23) |
 | 2 | Re-engage inactive contacts (HubSpot holds about 18,000, as stated 11-23) | Re-engagement activity that opens up stale relationships (Jeff, 11-23) |
 | 3 | Win conferences with pre-event emails, post-event emails and matching LinkedIn messages (Jeff, 11-20) | Pre-event and post-event communication: number of events where communications are sent; total communications sent; total replies (Jeff, 11-23) |
-| 4 | Nurture prospects and clients we already know | UNKNOWN |
+| 4 | Nurture prospects and clients we already know | Two KPIs: (1) newsletter sent, number of people it went to; (2) number of LinkedIn posts (Jeff, 11-23) |
 | 5 | Be thought leaders in our verticals | UNKNOWN |
 | 6 | Serve recruiting: every Fryeah! talk becomes content (Jeff, 11-20) | UNKNOWN |
 
@@ -103,6 +103,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Nurture KPIs: newsletter recipients (number of people) and number of LinkedIn posts | Jeff | Chat |
 | 2026-11-23 | Conference KPI: number of events with communications sent, total communications sent, total replies | Jeff | Chat |
 | 2026-11-23 | Re-engagement KPI: re-engagement activity that opens up stale relationships | Jeff | Chat |
 | 2026-11-23 | Revenue KPI first target: identify the first $1 USD attributed to or assisted by marketing | Jeff | Chat |
@@ -127,6 +128,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: nurture KPIs defined (newsletter recipients, LinkedIn post count).*
 *Updated 2026-11-23: conference KPI defined (events with comms sent, total comms, total replies).*
 *Updated 2026-11-23: re-engagement KPI defined (activity that opens up stale relationships).*
 *Updated 2026-11-23: revenue KPI first target set (first $1 USD attributed to or assisted by marketing).*
