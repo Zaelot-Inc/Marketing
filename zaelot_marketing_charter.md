@@ -47,7 +47,7 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
   - Earlier proposal, superseded: one post a day per contributor, about 200 words, to start; three a day across the team as the ideal; contributors claim topics from a shared list. Proposed 11-23 (Agustín, Germán). The shared topic list and the 200-word length still stand as working practice unless Jeff says otherwise.
 - **End of every meeting:** an email summary of the meeting, generated with Fireflies. **Agreed** (Jeff, 11-23). Recipients and who sends it: UNKNOWN.
 - **Beacon newsletter:** monthly. **Agreed** 11-23.
-- **Metrics review:** monthly, first in December on November data. **Agreed** 11-23.
+- **Metrics review:** first Friday of every month, on the prior month's data. **Agreed** (Jeff, 11-23). Replaces the earlier "first in December on November data" (11-23 call).
 
 ## 5. Roles
 
@@ -104,6 +104,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Metrics review: first Friday of every month | Jeff | Chat |
 | 2026-11-23 | LinkedIn cadence: 3 posts a day, 15 a week; reposts, sales team posts and Zaelot page posts all count | Jeff | Chat |
 | 2026-11-23 | Recruiting KPI: HR-approved posts on LinkedIn | Jeff | Chat |
 | 2026-11-23 | Thought leadership KPI: posts per vertical (Travel, Snow Sports, Real Estate, Media and Entertainment) | Jeff | Chat |
@@ -132,6 +133,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: metrics review set to the first Friday of every month.*
 *Updated 2026-11-23: LinkedIn cadence agreed (3 a day, 15 a week; reposts, sales team and Zaelot page count); KPI 4 target set.*
 *Updated 2026-11-23: recruiting KPI defined (HR-approved LinkedIn posts). All six goals now have a KPI.*
 *Updated 2026-11-23: thought leadership KPI defined (posts per vertical: Travel, Snow Sports, Real Estate, Media and Entertainment).*
