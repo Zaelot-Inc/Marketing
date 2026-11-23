@@ -59,7 +59,7 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
 | Beacon newsletter: picks the monthly topic | Germán's team | Agreed 11-23 |
 | Beacon audience | Jeff and Jaki help Agustín | Agreed 11-23 |
 | Voice guide | Agustín (from Avelino, name as transcribed) | Agreed 11-23 |
-| Company page follows | Agustín | Agreed 11-23 |
+| Company page follows | Agustín and Jeff | Agreed 11-23; Jeff added (Jeff, 11-23) |
 | Website ownership | UNKNOWN; Germán to settle with Leo | Open |
 | Content production and scheduling | UNKNOWN | Open (main gap named 11-20) |
 | Partner email | UNKNOWN | Open |
@@ -108,6 +108,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Company page follows: Agustín and Jeff | Jeff | Chat |
 | 2026-11-23 | Marketing owner is Germán; final content approver by topic: Travel Jeff, Technology Christian, Adventure Sports and Non-Profit Jaki, CRM Gastón, Real Estate Emma, HR Virginia, Fryeah! Agustín | Jeff | Chat |
 | 2026-11-23 | Metrics review: first Friday of every month | Jeff | Chat |
 | 2026-11-23 | LinkedIn cadence: 3 posts a day, 15 a week; reposts, sales team posts and Zaelot page posts all count | Jeff | Chat |
@@ -138,6 +139,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: Jeff added to company page follows.*
 *Updated 2026-11-23: marketing owner set to Germán; final content approvers by topic agreed (7 topics).*
 *Updated 2026-11-23: metrics review set to the first Friday of every month.*
 *Updated 2026-11-23: LinkedIn cadence agreed (3 a day, 15 a week; reposts, sales team and Zaelot page count); KPI 4 target set.*
