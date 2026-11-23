@@ -3,17 +3,20 @@
 **Last Updated:** 2026-11-23
 **Owner:** Jeff Galusha
 **Marketing calendar:** [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_d5f9ae49473766f07b343cfc79a81097c72353da22d2e4e41d2c7b566dd2b2a0@group.calendar.google.com&ctz=America/New_York)
+**Meetings:** [Marketing War Room](marketing_war_room.md), Mon, Tue, Fri, about 30 min (live agendas, open action items table, archive; Sales War Room template). Structure and decisions: [Zaelot Marketing Charter](zaelot_marketing_charter.md). This brief is reference.
 **Status:** Live. This brief is where marketing lives now. Section 7 of the war room carries a pointer and the weekly status line only.
 
 *Created 2026-11-20 from war room section 7 (Events and marketing) and its history, the `Marketing/` folder, `Marketing/Events/Hightouch Event/hackathon_luma_marketing_brief.md`, the Phocuswright blog drafts, and the artifacts and decks built this month. Every item says where it came from. Anything not sourced is UNKNOWN.*
 
-> **Headline:** Marketing has a long list of ideas and almost no owners or dates. What we have is good raw material: Phocuswright leads and two blog drafts, a travel-advisor innovation page, the Cruise Critic ticket-to-A/B-test case study, a public capabilities deck, and a design essay in progress. What's missing is a cadence and an approval process. The LinkedIn baseline (11-20) shows the page reaches people only when we pay: 89.8% of impressions were sponsored, posting is about 3 a month, and the followers are mostly engineers, not buyers. **First move: sign off on LinkedIn targets, decide who approves content, and ship the two Phocuswright posts while the show is fresh.**
+> **Headline:** Marketing has a long list of ideas and almost no owners or dates. What we have is good raw material: Phocuswright leads and two blog drafts, a travel-advisor innovation page, the Cruise Critic ticket-to-A/B-test case study, a public capabilities deck, and a design essay in progress. What's missing is a cadence and an approval process. The LinkedIn baseline (11-20) shows the page reaches people only when we pay: 89.8% of impressions were sponsored, posting is about 3 a month, and the followers are mostly engineers, not buyers. **First move: sign off on LinkedIn targets, decide who approves content, and ship the two Phocuswright posts while the show is fresh.** *11-23 follow-up call: reviewers now assigned by topic, Agustín owns a monthly Beacon newsletter, start at one LinkedIn post a day per contributor, and marketing meets Monday, Tuesday and Friday for 30 minutes (section 1).*
 
 ---
 
 ## 1. What marketing is for
 
-*From the 11-20 "Marketing for Zaelot" call (Jeff, Jaki, Agustín, Germán). Fireflies [01M7VPERQYMJ9G3PFE1GD279KN](https://app.fireflies.ai/view/01M7VPERQYMJ9G3PFE1GD279KN).*
+*The agreed version of this section lives in the [Zaelot Marketing Charter](zaelot_marketing_charter.md). This section keeps the call detail.*
+
+*From the 11-20 "Marketing for Zaelot" call (Jeff, Jaki, Agustín, Germán), Fireflies [01M7VPERQYMJ9G3PFE1GD279KN](https://app.fireflies.ai/view/01M7VPERQYMJ9G3PFE1GD279KN), and the 11-23 "Marketing Follow-up" (Jeff, Jaki, Agustín, Germán, Gastón, Christian), Fireflies [01M84YETC557TWHXXKRWVQ5VPG](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG).*
 
 ### Goals
 1. **Grow revenue.** More leads, including organic ones, and marketing that makes sales activity more focused.
@@ -22,6 +25,8 @@
 4. **Nurture who we already know.** Keep regular contact with existing prospects and customers, moving them from cold to warm without needing a sales call each time.
 5. **Be thought leaders in our verticals.**
 6. **Serve recruiting too.** 44% of LinkedIn followers are engineers and many are entry level, so content has to work for job seekers as well as buyers. **Fryeah! staff presentations are the clearest source for both:** every one should become content (Jeff, 11-20).
+
+**Each goal gets a KPI (agreed 11-23; numbers not set yet):** revenue = projects marketing influenced; re-engagement = activity from the inactive contacts (HubSpot holds about 18,000 inactive contacts, as stated on the call); conferences = pre-event and post-event communication sent. Other KPIs UNKNOWN.
 
 ### What each channel is for
 
@@ -44,7 +49,18 @@
 
 ### What we agreed
 - **Strategy before volume.** Cadence ideas ranged from 1 post and 1 email a week to 2 posts a week, but Jeff asked to agree purpose, audiences, messages and success measures first. The test: LinkedIn activity should lead to identifiable client opportunities, not just engagement.
-- **Next:** the call paused for the Friday session and resumes after it.
+- **Next:** the call paused for the Friday session and resumed 11-23 (below).
+
+### What we agreed 11-23 (Marketing Follow-up)
+- **Website and LinkedIn are where prospects check us out** before they engage, so both have to look current.
+- **LinkedIn cadence:** three Zaelot-related posts a day across the team is the ideal; Germán warned a target of three may yield one. Agustín's proposal: start with **one post a day per contributor, about 200 words**. Contributors claim topics from a shared list so posts don't overlap. Comments on relevant high-visibility conversations count as activity. Useful perspective first, not service promotion.
+- **Who we want to reach:** companies already in HubSpot, then their decision-makers and likely internal champions (CFOs named as an example).
+- **Post style:** short and readable, the strongest line first, few emojis or icons. Reuse or repost what works.
+- **Voice:** one Zaelot voice; Agustín gets the voice guide from Avelino (name as transcribed, unverified).
+- **Faster review:** reviewers assigned by topic (section 6.1). Approval must be fast enough to keep the cadence.
+- **Conferences:** match the follow-up to the event. A broad email can fit a big conference; small, relationship events get personal follow-up. The event owner decides. Phocuswright follow-up should be personal, not a bulk email.
+- **Brief gets shorter:** turn this brief into a working agenda (posts, email, content, approvals) with a monthly metrics review. (Jeff)
+- **Marketing meetings:** Monday, Tuesday and Friday, about 30 minutes, same time each day. Standing agenda: planned posts and new ideas, which emails go out, LinkedIn replies, urgent event messages. Agustín sends the invite (Fireflies action items; the notes also say Jeff agreed to send it, so owner to confirm).
 
 ---
 
@@ -87,8 +103,10 @@ What we did that actually landed a client. Write each one down so we can repeat 
 | Situate | 4159 | Gastón | UNKNOWN | | | |
 | Snow Partners (Snowcloud) | 4110 | Jaki | UNKNOWN | | | |
 | Teaching Strategies | 4007 | Germán | UNKNOWN | | | |
-| Tripadvisor (incl. Cruise Critic) | 4119 | Jeff | UNKNOWN | | | |
-| Zapier | 4162 | Jeff | UNKNOWN | | | |
+| Tripadvisor (incl. Cruise Critic) | 4119 | Jeff | Event (Tripadvisor); Referral (Cruise Critic, referred by Tripadvisor) | Which conference: UNKNOWN | UNKNOWN | Fireflies 11-23 |
+| Zapier | 4162 | Jeff | Partner | A partner recommended Zaelot; which partner: UNKNOWN | UNKNOWN | Fireflies 11-23 |
+
+**Where past clients came from, in general (11-23 call, not tied to specific clients):** conference introductions, partner referrals, client referrals, acquisitions, recruiters, Slack communities, and targeted cold outreach to companies with relevant job openings. Some accounts grew out of existing relationships, not marketing. Add "Recruiter" and "Community (Slack)" as categories if a client fits them.
 
 **Next step (proposed):** each sales owner fills in their rows. Agenda item for the next session: whether to add a "Lead source" property in HubSpot so new deals carry this from day one (a HubSpot settings change; needs admin OK).
 
@@ -99,6 +117,12 @@ One row per win, written as a repeatable motion.
 | Client | How it started | What we did, in order | First touch to signed | What made it work | Repeatable as | Owner | Source |
 |---|---|---|---|---|---|---|---|
 | *(none recorded yet)* | | | | | | | |
+
+### 2.3 Marketing motions that worked before
+
+| Motion | What it was | Result | Why it stopped | Now | Source |
+|---|---|---|---|---|---|
+| **Zaelot Beacon** | Newsletter to current clients: what Zaelot is doing, who is on the bench, capabilities | Called the most successful past marketing motion; generated profit (amount UNKNOWN) | Took too long to produce | Restarting monthly, Agustín sends (initiative 21) | Fireflies 11-23 |
 
 **How to add one:** after a deal closes, the seller adds a row. "Repeatable as" names the motion in a few words, e.g. "partner intro, then workshop, then pilot."
 
@@ -143,6 +167,8 @@ Whether personal profiles count toward marketing metrics is open decision 2.
 
 **Cadence discussed 11-20:** at least 1 LinkedIn post a week, then 2 a week as a baseline, against the report's 3 a day. Not decided; Jeff wants the strategy agreed first. (Fireflies 11-20.)
 
+**11-23:** start with one post a day per contributor, about 200 words; three a day across the team is the ideal (section 1). **Measurement:** monthly, first review in December covering November. Start with Jeff, Jaki and the company page; add people as they start posting. Zaelot's page follows only Sabre, OpenAI and Cloudinary; Agustín will add companies from HubSpot. (Fireflies 11-23.)
+
 **Proposed targets (from the report, need Jeff's sign-off):** organic impressions 1,660 to 6,000 a month by day 90; organic share of impressions 10% to 40% or more; new followers 77 to 150 a month; comments 1 to 20 a month; engagement rate at or above 2.0%; content-sourced conversations logged in HubSpot. The report also proposes 3 posts a day across LinkedIn, X, Instagram, Blog, Substack and video, built from one weekly source recording.
 
 **Setup checklist:**
@@ -178,7 +204,9 @@ Whether personal profiles count toward marketing metrics is open decision 2.
 |---|---|---|---|---|
 | What the judges asked 12 travel startups at Phocuswright | Blog / LinkedIn | Draft, Jeff to review | `Marketing/Conferences 2026/Jeff/Phocuswright_2026/blog_drafts/blog_1_launch_stage_judge_questions.md` | Company facts as pitched, not verified; decide whether to name judges |
 | Steve Singh on the next generation of travel | Blog / LinkedIn | Draft, Jeff to review | `.../blog_drafts/blog_2_steve_singh_next_generation_of_travel.md` | Quotes from an automated transcript; check against recording |
-| "The design system has a second reader now" | Essay | Draft, working on the first line | Zaelot marketing session (11-19) | Author and client naming UNKNOWN; client approval if named |
+| "The design system has a second reader now" | Essay | Draft, working on the first line | Zaelot marketing session (11-19) | Author and client naming UNKNOWN; client approval if named. 11-23 call praised "Marcela's design-system article"; same piece: likely, unconfirmed |
+| Agentic Migrations | Article, then LinkedIn | Draft by Ramiro, shared by Christian; Agustín adapting it to the blog template | Marketing repo (exact path UNKNOWN) | Agustín review; target was 11-24 or shortly after (Fireflies 11-23) |
+| Phocuswright talk transcripts and summaries, conference photos | Raw material for posts with a Zaelot point of view | Collected with Grokbot | `Marketing/Conferences 2026/` | Add a Zaelot perspective; don't just repost |
 | Zaelot helps travel leaders innovate | Web page (travel advisors) | Published, private link | https://claude.ai/artifact/N6jaWtABUU7KmqCxSxu2MX | Blur VAX/CheapCaribbean marks and names in screenshots; Fora and Cruise Critic naming needs approval; ngrok demo link is temporary |
 | Ticket to A/B test (Cruise Critic) | Case study page | Published, private link | https://claude.ai/artifact/SixTtx8jh4UJJXg6fktRzS | Client approval to name Cruise Critic: UNKNOWN |
 | Capabilities deck | Web deck, 12 slides | Public | https://zaelot-travel-deck.vercel.app | None noted |
@@ -205,27 +233,34 @@ Source: Friday talks schedule, shared by Jeff 11-23. All marked Held.
 | Nov 13, 2026 | Hightouch as Code | Dorian Machado | A custom Terraform provider for Hightouch and tooling to manage a workspace as code: plan, review, apply, adopt what exists in the UI | Partner content for Hightouch (top-performing post theme) |
 | Nov 20, 2026 | Lindblad: Travel & Hospitality, FDE Mentality | Nahuel Canchy | How Nahuel built his Travel & Hospitality knowledge on Lindblad and what he learned | Travel vertical, embedded-engineer story; needs Lindblad approval |
 
+**Public versions (11-23):** Friday updates and talks can go public once client names and confidential detail are removed. Christian can add that step to the Friday tasks. (Fireflies 11-23.)
+
 The "Marketing angle" column is a proposal, not agreed. The baseline gap these fill: client case studies, engineering how-tos, and the AI story were missing from the feed (section 3).
 
 ---
 
 ## 5. Open decisions
 
-1. Who approves content before it posts?
+1. Who approves content before it posts? *11-23: reviewers by topic proposed (section 6.1); final approver still open.*
 2. Which LinkedIn accounts count: company page only, or also Jeff's and Jaki's profiles?
 3. Substack: yes or no? The LinkedIn report proposes one weekly issue and 280 subscribers by day 90.
-4. Sign off on the LinkedIn targets and the 3-posts-a-day proposal (report Part 2), or set smaller ones. Who produces the weekly source recording?
-5. Owner and send date for the year-end newsletter.
+4. Sign off on the LinkedIn targets and the 3-posts-a-day proposal (report Part 2), or set smaller ones. Who produces the weekly source recording? *11-23: leaning to one post a day per contributor, about 200 words.*
+5. Owner and send date for the year-end newsletter. *11-23: Agustín owns a monthly Beacon newsletter; audience still to build. Thanksgiving email needed near-term coordination.*
 6. Which of the two Phocuswright blog drafts goes first, and where (LinkedIn article, website, both)?
-7. The strategy itself (11-20): purpose, audiences, messages, success measures, then cadence. Discussion paused for the Friday session, to resume after.
+7. The strategy itself (11-20): purpose, audiences, messages, success measures, then cadence. *Resumed 11-23: goals and channel roles confirmed; KPIs per goal still to set.*
 8. Who owns content production and scheduling? (Named as the main gap, 11-20.)
 9. Partner email: who owns it, how often, and does it start with all 10 partners or the strongest Crossbeam ones?
 10. **Channels (not Jeff's call; decider UNKNOWN):** keep LinkedIn, Email (HubSpot) and Slack (partner shared channels and community Slacks)? Add Substack or Instagram? Input for whoever decides: Substack would split the readers HubSpot email already reaches (report target 280 subscribers in 90 days vs about 1,000 emailable contacts today); a LinkedIn newsletter covers most of the same need. Instagram fits recruiting and employer brand more than buyers. Video can run on LinkedIn without a new channel. (Discussed with Jeff 11-20.)
 
 ### Agenda for the next marketing session
 
-- [ ] **Post style:** emoji use on LinkedIn posts that tag #zaelot. Jeff finds emoji-heavy posts ugly (example: Jorge Zamit's 11-17 #aifirst #ainative post, https://lnkd.in/p/gqy-iGR4). Agree on a style guideline for company and personal posts. Ties to decision 2. (Jeff, 11-21)
+*Moved: the live agenda now runs in [marketing_war_room.md](marketing_war_room.md) (Tuesday 11-24, section 2). This list is kept as the record.*
+
+- [x] **Post style:** *discussed 11-23: short, strongest line first, few emojis (section 1). Write it into the voice guide.* Emoji use on LinkedIn posts that tag #zaelot. Jeff finds emoji-heavy posts ugly (example: Jorge Zamit's 11-17 #aifirst #ainative post, https://lnkd.in/p/gqy-iGR4). Agree on a style guideline for company and personal posts. Ties to decision 2. (Jeff, 11-21)
 - [ ] **We have a marketing calendar:** [Zaelot marketing calendar](https://calendar.google.com/calendar/u/0/embed?src=c_d5f9ae49473766f07b343cfc79a81097c72353da22d2e4e41d2c7b566dd2b2a0@group.calendar.google.com&ctz=America/New_York). Agree who owns it, what goes on it (posts, emails, events, Friday talks) and how it ties to the RACI and the cadence discussion. (Jeff, 11-23)
+- [ ] **KPIs:** put a number on each goal (section 1). (11-23)
+- [ ] **Beacon audience:** which HubSpot contacts get the monthly newsletter; Jeff and Jaki help Agustín. (11-23)
+- [ ] **Website:** who owns the remaining sections; copy changes or visuals only? (11-23)
 - [ ] **Client attribution:** sales owners fill in section 2.1 (first touch for each of the 20 active clients). Decide whether to add a "Lead source" property in HubSpot so new deals carry it. (11-23)
 
 ---
@@ -248,7 +283,18 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | Activity | R | A | C | I | Source |
 |---|---|---|---|---|---|
 | Marketing strategy: goals, audiences, messages, success measures | | | | Sales team | Fireflies 11-20 (strategy before volume) |
-| Content approval (final OK before anything posts or sends) | | | Author of the piece | | Open decision, section 5 |
+| Content approval (final OK before anything posts or sends) | | | Author of the piece; topic reviewer (below) | | Open decision, section 5 |
+| Marketing meetings (Mon, Tue, Fri, 30 min) and invite | Agustín (invite) | UNKNOWN | Marketing team | Sales team | Fireflies 11-23 |
+
+**Topic reviewers (proposed 11-23):** the reviewer is C on any post in their area.
+
+| Topic | Reviewer | Source |
+|---|---|---|
+| Travel | Jeff | Fireflies 11-23 |
+| Technology | Christian | Fireflies 11-23 |
+| Brand | Germán | Fireflies 11-23 |
+| Salesforce | Gastón | Fireflies 11-23 |
+| Snow | Jaki | Fireflies 11-23 |
 | Content plan and calendar | | | | Sales team | War room 11-11 (create marketing content plan) |
 | Monthly marketing metrics report (LinkedIn, email) | | | | Sales team, war room | Section 3 (baseline pulled 11-20) |
 | Marketing budget, events | | | | War room | War room ($10K/month proposed) |
@@ -263,6 +309,8 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | Thought leadership articles and blogs | Jeff (Phocuswright drafts); Christian (blog, unverified) | Jeff | Jaki, client named in the piece | Sales team | Section 4; Fireflies 11-20 |
 | Video | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | Jeff's notes 11-20 ("Lets create videos?") |
 | LinkedIn prospecting tool trial | Jaki | Jaki | Jeff | Sales team | Fireflies 11-10 |
+| Company page follows (HubSpot companies) | Agustín | UNKNOWN | Jeff | n/a | Fireflies 11-23 |
+| Voice guide | Agustín (gets it from Avelino) | UNKNOWN | Germán (brand) | All writers | Fireflies 11-23 |
 
 ### 6.3 Email to leads (HubSpot)
 
@@ -273,6 +321,7 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | Account-based outreach (Crossbeam partner overlap) | UNKNOWN | Jeff (P) | Jaki, account owners, partner contacts | Partners | Fireflies 11-20 (179 / 93 overlap) |
 | HubSpot email templates | Ignacio | Jeff (P) | Marcela | Jaki | War room open items (Ignacio asked 11-04) |
 | Year-end newsletter | UNKNOWN | UNKNOWN | Jaki | All contacts | Brief initiative 5 |
+| Beacon monthly newsletter | Agustín | UNKNOWN | Germán's team (monthly topic); subject experts (content); Jeff and Jaki (audience) | Recipients | Fireflies 11-23 |
 
 ### 6.4 Events
 
@@ -295,7 +344,7 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 
 | Activity | R | A | C | I | Source |
 |---|---|---|---|---|---|
-| Website updates and next version | Christian (unverified); Ramiro (events page) | Germán | Jaki | Sales team | War room 11-11 (Germán: coordinate website updates, assign website-content owner; Jaki: review); Fireflies 11-20 |
+| Website updates and next version | Christian (unverified); Ramiro (events page); Marcela (visual refresh, homepage ready) | Germán | Jaki | Sales team | War room 11-11; Fireflies 11-20; Fireflies 11-23 (Germán to ask Leo to free Marcela's time) |
 | Case studies | Project lead (Marcela: Cruise Critic; Emma: Land Advisors) | Jeff | Jaki, the client (approval to name) | Sales team | Fireflies 11-10; brief initiative 7 |
 | Design and visuals | Marcela | Jeff (P) | Author of the piece | n/a | War room 11-11. Risk: Marcela's contract ends 12-04 |
 
@@ -317,7 +366,7 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | # | Initiative | What it is | Owner | Status | Next step | Source |
 |---|---|---|---|---|---|---|
 | 1 | **LinkedIn metrics** | Track likes, comments, shares, clicks, impressions per post, monthly | Jeff | **Baseline done 11-20** (1-year review from LinkedIn page admin analytics, see section 3). HubSpot Social permission still missing, so monthly pulls are manual for now | Approve or change the proposed targets; set the monthly pull | `Linkedin - Social/Zaelot on LinkedIn_ 1 Year Review - Baseline.html` |
-| 2 | **Content approval process** | Who signs off before anything posts | UNKNOWN | Open question | Name one approver and a turnaround time | War room section 7 |
+| 2 | **Content approval process** | Who signs off before anything posts | UNKNOWN | Topic reviewers proposed 11-23 (section 6.1); final approver open | Name one approver and a turnaround time | War room section 7 |
 | 3 | **How we post about Zaelot** | Content by area: Sales, Design, EWTN, Engineering, Innovation team | UNKNOWN | Open | Pick one owner per area and a cadence | War room section 7 |
 | 4 | **Substack** | Decide whether to start one | UNKNOWN | Open question | Decide after LinkedIn baseline exists | War room section 7 |
 | 5 | **Year-end newsletter** | End-of-year wrap | UNKNOWN | Not started | Name owner, pick send date, draft | War room section 7 |
@@ -335,6 +384,10 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | 17 | **LinkedIn prospecting tool trial** | Tool finds people engaging with Zaelot content and drafts messages into Slack for manual review | Jaki (Jeff to set up his own) | Trial as of 11-10; tool name UNKNOWN | Decide keep or drop after trial | Fireflies 11-10 |
 | 18 | **Professional-services sales posts** | Insight posts on what is and isn't working in Zaelot's sales approach | Jeff | Planned 11-10 | Draft first post | Fireflies 11-10 |
 | 19 | **Deeper case studies** | Land Advisors (with Emma), EWTN, Cruise Critic (with Marcela) | Jeff and Jaki | Planned 11-10; Land Advisors write-up described as too surface-level | Jaki's talk with Emma; Marcela's write-up before 12-04 | Fireflies 11-10 |
+| 21 | **Zaelot Beacon (monthly)** | Restart the client newsletter: Zaelot news, bench, capabilities | Agustín | Agreed 11-23 | Build the HubSpot audience with Jeff and Jaki; Germán's team picks the first topic | Fireflies 11-23 |
+| 22 | **LinkedIn company follows** | Page follows only Sabre, OpenAI, Cloudinary; add companies from HubSpot | Agustín | Agreed 11-23 | Build the list; a browser-enabled tool may help | Fireflies 11-23 |
+| 23 | **Agentic Migrations article** | Ramiro's draft, adapted to the blog template, then LinkedIn | Agustín | In review 11-23 | Publish and share | Fireflies 11-23 |
+| 24 | **Recurring marketing meetings** | Mon, Tue, Fri, about 30 minutes | Agustín (invite) | Agreed 11-23 | Send the invite | Fireflies 11-23 |
 | 20 | **Fryeah! talks as content** | Every Fryeah! staff presentation becomes content (post, clip, blog). Each one serves two audiences: the industries we sell to, and recruiting | UNKNOWN | Agreed by Jeff 11-20 ("they are gold") | Name an owner; agree a format per talk (for example a short clip plus a LinkedIn post); get presenter OK before publishing | Jeff 11-20 |
 
 ---
@@ -381,7 +434,21 @@ Budget: Gaston proposed $10,000 for November and $10,000 for December events; ap
 - [ ] Clean the innovation page for outside sharing (blur client marks and names, replace the ngrok link), Jeff
 - [ ] Close or drop the hackathon LinkedIn ad budget item, Jeff
 - [ ] Add Agustín to the partner updates group, Jeff (Fireflies 11-20)
-- [ ] Resume the marketing strategy discussion after the Friday session, Jeff, Jaki, Agustín, Germán (Fireflies 11-20)
+- [x] Resume the marketing strategy discussion after the Friday session, Jeff, Jaki, Agustín, Germán (Fireflies 11-20). Done 11-23.
+- [x] Update the marketing brief, Jeff (Fireflies 11-23). Done 11-23.
+- [ ] Write a LinkedIn post, Jeff (Fireflies 11-23)
+- [ ] Define measurable KPIs for each goal, marketing team (Fireflies 11-23)
+- [ ] Collect LinkedIn metrics monthly, first review in December, marketing team (Fireflies 11-23)
+- [ ] Build the content approval chart (topic reviewers), marketing team (Fireflies 11-23)
+- [ ] Send Beacon copy, Germán (Fireflies 11-23)
+- [ ] Talk to Leo about freeing Marcela for the website; settle website ownership, Germán (Fireflies 11-23)
+- [ ] Get the Zaelot voice guide from Avelino, Agustín (Fireflies 11-23)
+- [ ] Send the monthly Beacon newsletter, Agustín (Fireflies 11-23)
+- [ ] Review the Agentic Migrations article, Agustín (Fireflies 11-23)
+- [ ] Connect the LinkedIn workflow and the Marketing repo to Claude, Agustín (Fireflies 11-23)
+- [ ] Expand Zaelot's LinkedIn company follows, Agustín (Fireflies 11-23)
+- [ ] Send the Mon/Tue/Fri marketing meeting invite, Agustín (Fireflies 11-23)
+- [ ] Personal follow-up with about 35 Phocuswright contacts (Sabre, TPI, Fareportal, Highgate, Northstar named), Jeff (war room 11-20)
 - [ ] Build the next website version and write a blog post, Christian (Fireflies 11-20, Jaki's recording; attribution not verified)
 - [ ] Get the Mountain Technology Summit attendee list and send the NSAA follow-up, Jaki (Fireflies 11-10)
 - [ ] Send the HubSpot event follow-up campaign and load the Lake Placid contacts, Jaki (Fireflies 11-10)
@@ -392,6 +459,9 @@ Budget: Gaston proposed $10,000 for November and $10,000 for December events; ap
 
 | Date | Meeting | Fireflies |
 |---|---|---|
+| 2026-11-23 | Marketing Follow-up (Jeff, Jaki, Agustín, Germán, Gastón, Christian), ~69 min | [01M84YETC557TWHXXKRWVQ5VPG](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG) |
+| 2026-11-20 | Sales War Room weekly wrap (marketing: Phocuswright follow-up with about 35 contacts, Grok research, Palmata license, Code Tempo licensing) | [01M7WNWJ9PBG3PV6G0P4FS664K](https://app.fireflies.ai/view/01M7WNWJ9PBG3PV6G0P4FS664K) |
+| 2026-11-20 | Friyay Talk: Lindblad, Travel & Hospitality, FDE Mentality (Nahuel Canchy) | [01M7WRTQ8A1ZACBJ7X0HXDWRAG](https://app.fireflies.ai/view/01M7WRTQ8A1ZACBJ7X0HXDWRAG) |
 | 2026-11-20 | Marketing for Zaelot (Jeff, Jaki, Agustín, Germán), ~22 min, three recordings | [01M7VPERQYMJ9G3PFE1GD279KN](https://app.fireflies.ai/view/01M7VPERQYMJ9G3PFE1GD279KN), [01M7WQJTHVGG76TCX5MVS6SBHP](https://app.fireflies.ai/view/01M7WQJTHVGG76TCX5MVS6SBHP), [01M7WQN2N6EBEQQ55CN3QTECMT](https://app.fireflies.ai/view/01M7WQN2N6EBEQQ55CN3QTECMT) |
 | 2026-11-11 | Sales War Room (marketing items: website, content plan, event funnel targets) | [01M6M4R9KJ2P1135XC8A71C0MN](https://app.fireflies.ai/view/01M6M4R9KJ2P1135XC8A71C0MN) |
 | 2026-11-10 | Jaki 1 on 1 (LinkedIn tool, HubSpot email, event follow-up, case studies) | [01M73DKV16SDS28PVV9HRHK968](https://app.fireflies.ai/view/01M73DKV16SDS28PVV9HRHK968) |
@@ -403,6 +473,10 @@ No Fireflies recordings mention NSAA, Mountains of Data or Get Ski Bots (searche
 *Sources: `war_room/sales_war_room.md` section 7 and history (11-06, 11-11, 11-18); `Marketing/` folder; `Marketing/Website/ChatGPT-Agent/Zaelot-ChatGPT-Agent-Brief.md`; `Marketing/Conferences 2026/Jaki/NSAA_2026_followup/README.md`; `Marketing/Events/Hightouch Event/hackathon_luma_marketing_brief.md`; Phocuswright blog drafts and Grok Bot report (11-19); HubSpot social analytics check (11-20).*
 
 ## Update Log
+*Updated 2026-11-23: drafted `zaelot_marketing_charter.md` (Jeff: one document for structural decisions); header and section 1 now point to it.*
+*Updated 2026-11-23: per Jeff, Marketing War Room is the live meeting doc; restructured it to 8 sections with an open action items table (31 items), archived the 11-23 session as "Marketing session, 2026-11-23, charter", prepped Tuesday 11-24, added `marketing_war_room_history.md`. This brief stays the charter and reference.*
+*Updated 2026-11-23: created `marketing_war_room.md` on the Sales War Room template (Mon/Tue/Fri agendas, numbered sections, open action items by owner); Monday 11-23 live, Tuesday 11-24 prepped. Linked from the header.*
+*Updated 2026-11-23 (Fireflies 11-23 Marketing Follow-up; 11-20 war room and Friyay talk): added what was agreed 11-23 (cadence, style, voice, conferences, Mon/Tue/Fri meetings, KPI per goal); first touch for Tripadvisor, Cruise Critic and Zapier; new 2.3 with Zaelot Beacon; topic reviewers in the RACI; Beacon, company follows and voice guide rows; initiatives 21 to 24; Agentic Migrations and Phocuswright transcripts in content; decisions 1, 4, 5, 7 annotated; three agenda items; 15 open items; calls on record.*
 *Updated 2026-11-23: section 2 now lists the 20 active ZOps clients with sales owners and attribution categories (section 2.1); first touch UNKNOWN for all, since HubSpot has no lead-source data. Added an agenda item.*
 *Updated 2026-11-23: added section 2, Successful motions (template, no wins recorded yet); later sections renumbered 3 to 11.*
 *Updated 2026-11-23: moved LinkedIn metrics to section 2; Content is now 3, Open decisions 4, RACI 5, Initiatives 6.*
