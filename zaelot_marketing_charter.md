@@ -53,8 +53,8 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
 
 | Role | Who | Status |
 |---|---|---|
-| Marketing owner, final sign-off on this charter | Jeff | Agreed (brief owner) |
-| Final content approver | UNKNOWN | Open |
+| Marketing owner, final sign-off on this charter | Germán | Agreed (Jeff, 11-23). Was Jeff (brief owner) |
+| Final content approver | By topic, see the table below | Agreed (Jeff, 11-23) |
 | Beacon newsletter: sends | Agustín | Agreed 11-23 |
 | Beacon newsletter: picks the monthly topic | Germán's team | Agreed 11-23 |
 | Beacon audience | Jeff and Jaki help Agustín | Agreed 11-23 |
@@ -64,21 +64,25 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
 | Content production and scheduling | UNKNOWN | Open (main gap named 11-20) |
 | Partner email | UNKNOWN | Open |
 
-**Topic reviewers.** **Proposed** 11-23. The reviewer checks any post in their area before it goes out.
+**Final content approver, by topic.** **Agreed** (Jeff, 11-23). The approver for the post's topic OKs it before it goes out.
 
-| Topic | Reviewer |
-|---|---|
-| Travel | Jeff |
-| Technology | Christian |
-| Brand | Germán |
-| Salesforce | Gastón |
-| Snow | Jaki |
+| # | Topic | Final approver |
+|---|---|---|
+| 1 | Travel | Jeff |
+| 2 | Technology | Christian |
+| 3 | Adventure Sports and Non-Profit | Jaki |
+| 4 | CRM | Gastón |
+| 5 | Real Estate | Emma |
+| 6 | HR | Virginia |
+| 7 | Fryeah! | Agustín |
+
+Superseded: the 11-23 call proposed topic reviewers Travel (Jeff), Technology (Christian), Brand (Germán), Salesforce (Gastón), Snow (Jaki). Brand has no approver in the agreed list; Salesforce is now CRM, Snow is now Adventure Sports.
 
 Full RACI draft: brief section 6.
 
 ## 6. How content gets made and approved
 
-- Writer drafts, topic reviewer checks, final approver OKs. Approval must be fast enough to keep the cadence. **Agreed** in principle 11-23; final approver open.
+- Writer drafts, the topic's final approver (section 5) OKs. Approval must be fast enough to keep the cadence. **Agreed** in principle 11-23; approvers by topic agreed (Jeff, 11-23).
 - Internal material (Friday talks, client work) goes public only after client names and confidential detail are removed, and only with client approval where a client is named. **Agreed** 11-23.
 - Outreach to someone's contacts is coordinated with that contact's owner first. **Agreed** 11-20.
 
@@ -104,6 +108,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Marketing owner is Germán; final content approver by topic: Travel Jeff, Technology Christian, Adventure Sports and Non-Profit Jaki, CRM Gastón, Real Estate Emma, HR Virginia, Fryeah! Agustín | Jeff | Chat |
 | 2026-11-23 | Metrics review: first Friday of every month | Jeff | Chat |
 | 2026-11-23 | LinkedIn cadence: 3 posts a day, 15 a week; reposts, sales team posts and Zaelot page posts all count | Jeff | Chat |
 | 2026-11-23 | Recruiting KPI: HR-approved posts on LinkedIn | Jeff | Chat |
@@ -133,6 +138,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: marketing owner set to Germán; final content approvers by topic agreed (7 topics).*
 *Updated 2026-11-23: metrics review set to the first Friday of every month.*
 *Updated 2026-11-23: LinkedIn cadence agreed (3 a day, 15 a week; reposts, sales team and Zaelot page count); KPI 4 target set.*
 *Updated 2026-11-23: recruiting KPI defined (HR-approved LinkedIn posts). All six goals now have a KPI.*
