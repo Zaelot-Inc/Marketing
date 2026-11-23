@@ -1,6 +1,6 @@
 # Zaelot Marketing Brief
 
-**Last Updated:** 2026-11-20
+**Last Updated:** 2026-11-21
 **Owner:** Jeff Galusha
 **Status:** Live. This brief is where marketing lives now. Section 7 of the war room carries a pointer and the weekly status line only.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 1. Open decisions (for Jeff)
+## 1. Open decisions
 
 1. Who approves content before it posts?
 2. Which LinkedIn accounts count: company page only, or also Jeff's and Jaki's profiles?
@@ -22,6 +22,10 @@
 8. Who owns content production and scheduling? (Named as the main gap, 11-20.)
 9. Partner email: who owns it, how often, and does it start with all 10 partners or the strongest Crossbeam ones?
 10. **Channels (not Jeff's call; decider UNKNOWN):** keep LinkedIn, Email (HubSpot) and Slack (partner shared channels and community Slacks)? Add Substack or Instagram? Input for whoever decides: Substack would split the readers HubSpot email already reaches (report target 280 subscribers in 90 days vs about 1,000 emailable contacts today); a LinkedIn newsletter covers most of the same need. Instagram fits recruiting and employer brand more than buyers. Video can run on LinkedIn without a new channel. (Discussed with Jeff 11-20.)
+
+### Agenda for the next marketing session
+
+- [ ] **Post style:** emoji use on LinkedIn posts that tag #zaelot. Jeff finds emoji-heavy posts ugly (example: Jorge Zamit's 11-17 #aifirst #ainative post, https://lnkd.in/p/gqy-iGR4). Agree on a style guideline for company and personal posts. Ties to decision 2. (Jeff, 11-21)
 
 ---
 
@@ -42,11 +46,11 @@
 
 | Activity | R | A | C | I | Source |
 |---|---|---|---|---|---|
-| Marketing strategy: goals, audiences, messages, success measures | Jeff | Jeff | Jaki, Agustín, Germán | Sales team | Fireflies 11-20 (Jeff: strategy before volume) |
-| Content approval (final OK before anything posts or sends) | UNKNOWN approver | Jeff (P) | Author of the piece | Jaki | Open decision, section 1 |
-| Content plan and calendar | Agustín | Jeff (P) | Jaki, Marcela | Sales team | War room 11-11 (Agustín: create marketing content plan) |
-| Monthly marketing metrics report (LinkedIn, email) | Jeff | Jeff | Jaki | Sales team, war room | Section 6 (baseline pulled by Jeff 11-20) |
-| Marketing budget, events | Gaston | Jeff (P) | Jaki | War room | War room (Gaston proposed $10K/month) |
+| Marketing strategy: goals, audiences, messages, success measures | | | | Sales team | Fireflies 11-20 (strategy before volume) |
+| Content approval (final OK before anything posts or sends) | | | Author of the piece | | Open decision, section 1 |
+| Content plan and calendar | | | | Sales team | War room 11-11 (create marketing content plan) |
+| Monthly marketing metrics report (LinkedIn, email) | | | | Sales team, war room | Section 6 (baseline pulled 11-20) |
+| Marketing budget, events | | | | War room | War room ($10K/month proposed) |
 
 ### 2.2 Social (LinkedIn, video)
 
@@ -117,7 +121,7 @@
 3. **Win conferences** with pre-event emails, post-event emails and matching LinkedIn messages. (Jeff, 11-20.)
 4. **Nurture who we already know.** Keep regular contact with existing prospects and customers, moving them from cold to warm without needing a sales call each time.
 5. **Be thought leaders in our verticals.**
-6. **Serve recruiting too.** 44% of LinkedIn followers are engineers and many are entry level, so content has to work for job seekers as well as buyers.
+6. **Serve recruiting too.** 44% of LinkedIn followers are engineers and many are entry level, so content has to work for job seekers as well as buyers. **Fryeah! staff presentations are the clearest source for both:** every one should become content (Jeff, 11-20).
 
 ### What each channel is for
 
@@ -167,6 +171,7 @@
 | 17 | **LinkedIn prospecting tool trial** | Tool finds people engaging with Zaelot content and drafts messages into Slack for manual review | Jaki (Jeff to set up his own) | Trial as of 11-10; tool name UNKNOWN | Decide keep or drop after trial | Fireflies 11-10 |
 | 18 | **Professional-services sales posts** | Insight posts on what is and isn't working in Zaelot's sales approach | Jeff | Planned 11-10 | Draft first post | Fireflies 11-10 |
 | 19 | **Deeper case studies** | Land Advisors (with Emma), EWTN, Cruise Critic (with Marcela) | Jeff and Jaki | Planned 11-10; Land Advisors write-up described as too surface-level | Jaki's talk with Emma; Marcela's write-up before 12-04 | Fireflies 11-10 |
+| 20 | **Fryeah! talks as content** | Every Fryeah! staff presentation becomes content (post, clip, blog). Each one serves two audiences: the industries we sell to, and recruiting | UNKNOWN | Agreed by Jeff 11-20 ("they are gold") | Name an owner; agree a format per talk (for example a short clip plus a LinkedIn post); get presenter OK before publishing | Jeff 11-20 |
 
 ---
 
@@ -318,6 +323,9 @@ No Fireflies recordings mention NSAA, Mountains of Data or Get Ski Bots (searche
 *Sources: `war_room/sales_war_room.md` section 7 and history (11-06, 11-11, 11-18); `Marketing/` folder; `Marketing/Website/ChatGPT-Agent/Zaelot-ChatGPT-Agent-Brief.md`; `Marketing/Conferences 2026/Jaki/NSAA_2026_followup/README.md`; `Marketing/Events/Hightouch Event/hackathon_luma_marketing_brief.md`; Phocuswright blog drafts and Grok Bot report (11-19); HubSpot social analytics check (11-20).*
 
 ## Update Log
+*Updated 2026-11-21: added an agenda for the next marketing session (section 1), first item post style and emoji use.*
+*Updated 2026-11-20: every Fryeah! staff presentation becomes content, aimed at both industry buyers and recruiting (initiative 20; goal 6).*
+*Updated 2026-11-20: removed names from RACI 2.1 (Strategy and governance); roles left blank to assign in the strategy session.*
 *Updated 2026-11-20: added personal LinkedIn profile reports to section 6 (Jeff's report link; Jaki's UNKNOWN).*
 *Updated 2026-11-20: added decision 10, channels (LinkedIn, Email, Slack; Substack and Instagram open). Jeff says this is not his decision; decider UNKNOWN.*
 *Updated 2026-11-20: added goal 3, "Win conferences" with pre-event and post-event emails plus matching LinkedIn messages (Jeff).*
