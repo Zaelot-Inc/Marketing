@@ -16,7 +16,7 @@ Marketing helps Zaelot win and keep clients, and helps recruiting. LinkedIn acti
 
 Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 
-| # | Goal | KPI (measure agreed 11-23; target UNKNOWN) |
+| # | Goal | KPI |
 |---|---|---|
 | 1 | Grow revenue: more leads, including organic | Projects marketing influenced |
 | 2 | Re-engage inactive contacts (HubSpot holds about 18,000, as stated 11-23) | Re-engagement activity |
