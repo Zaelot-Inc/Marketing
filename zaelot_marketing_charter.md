@@ -18,7 +18,7 @@ Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 
 | # | Goal | KPI |
 |---|---|---|
-| 1 | Grow revenue: more leads, including organic | Projects marketing influenced |
+| 1 | Grow revenue: more leads, including organic | Projects marketing influenced. First target: identify the first $1 USD attributed to or assisted by marketing (Jeff, 11-23) |
 | 2 | Re-engage inactive contacts (HubSpot holds about 18,000, as stated 11-23) | Re-engagement activity |
 | 3 | Win conferences with pre-event emails, post-event emails and matching LinkedIn messages (Jeff, 11-20) | Pre-event and post-event communication sent |
 | 4 | Nurture prospects and clients we already know | UNKNOWN |
@@ -103,6 +103,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Revenue KPI first target: identify the first $1 USD attributed to or assisted by marketing | Jeff | Chat |
 | 2026-11-23 | Every meeting ends with an email summary, generated with Fireflies | Jeff | Chat |
 | 2026-11-23 | Documents: charter holds structure, Marketing War Room holds live agendas, brief is reference, history file preserves archived sessions verbatim | Jeff | Chat |
 | 2026-11-23 | Conference follow-up matches the event: broad email for big shows, personal follow-up for small ones; event owner decides | Team | Fireflies 11-23 |
@@ -124,6 +125,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: revenue KPI first target set (first $1 USD attributed to or assisted by marketing).*
 *Updated 2026-11-23: added the end-of-meeting Fireflies email summary (section 4) and seven more 11-23 decisions to the log.*
 *Updated 2026-11-23: added Jeff's standing agenda (section 4 and decision log).*
 *Updated 2026-11-23: charter drafted from the 11-20 and 11-23 calls and Jeff's decisions in chat.*
