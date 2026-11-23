@@ -21,7 +21,7 @@ Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 | 1 | Grow revenue: more leads, including organic | Projects marketing influenced. First target: identify the first $1 USD attributed to or assisted by marketing (Jeff, 11-23) |
 | 2 | Re-engage inactive contacts (HubSpot holds about 18,000, as stated 11-23) | Re-engagement activity that opens up stale relationships (Jeff, 11-23) |
 | 3 | Win conferences with pre-event emails, post-event emails and matching LinkedIn messages (Jeff, 11-20) | Pre-event and post-event communication: number of events where communications are sent; total communications sent; total replies (Jeff, 11-23) |
-| 4 | Nurture prospects and clients we already know | Two KPIs: (1) newsletter sent, number of people it went to; (2) number of LinkedIn posts (Jeff, 11-23) |
+| 4 | Nurture prospects and clients we already know | Two KPIs: (1) newsletter sent, number of people it went to; (2) number of LinkedIn posts, target 15 a week, 3 a day (Jeff, 11-23) |
 | 5 | Be thought leaders in our verticals | Number of posts per vertical: (1) Travel, (2) Snow Sports, (3) Real Estate, (4) Media and Entertainment (Jeff, 11-23) |
 | 6 | Serve recruiting: every Fryeah! talk becomes content (Jeff, 11-20) | HR-approved posts on LinkedIn (Jeff, 11-23) |
 
@@ -43,7 +43,8 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
 ## 4. Cadence
 
 - **Marketing meetings:** Monday, Tuesday, Friday, about 30 minutes, same time each day. **Agreed** 11-23; Jeff to confirm the days. Run on the Sales War Room template in [marketing_war_room.md](marketing_war_room.md). **Agreed** (Jeff, 11-23). Standing agenda: Upcoming marketing, Ideas for posts, Ideas for emails, Interesting replies, Open action items, Next steps. **Agreed** (Jeff, 11-23).
-- **LinkedIn:** one post a day per contributor, about 200 words, to start. Three a day across the team is the ideal. Contributors claim topics from a shared list. **Proposed** 11-23 (Agustín, Germán).
+- **LinkedIn:** 3 posts a day by Zaelot, 15 posts a week. Any of three count: (1) reposts, (2) posts by anyone on the sales team, (3) posts by the Zaelot company page. **Agreed** (Jeff, 11-23).
+  - Earlier proposal, superseded: one post a day per contributor, about 200 words, to start; three a day across the team as the ideal; contributors claim topics from a shared list. Proposed 11-23 (Agustín, Germán). The shared topic list and the 200-word length still stand as working practice unless Jeff says otherwise.
 - **End of every meeting:** an email summary of the meeting, generated with Fireflies. **Agreed** (Jeff, 11-23). Recipients and who sends it: UNKNOWN.
 - **Beacon newsletter:** monthly. **Agreed** 11-23.
 - **Metrics review:** monthly, first in December on November data. **Agreed** 11-23.
@@ -103,6 +104,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | LinkedIn cadence: 3 posts a day, 15 a week; reposts, sales team posts and Zaelot page posts all count | Jeff | Chat |
 | 2026-11-23 | Recruiting KPI: HR-approved posts on LinkedIn | Jeff | Chat |
 | 2026-11-23 | Thought leadership KPI: posts per vertical (Travel, Snow Sports, Real Estate, Media and Entertainment) | Jeff | Chat |
 | 2026-11-23 | Nurture KPIs: newsletter recipients (number of people) and number of LinkedIn posts | Jeff | Chat |
@@ -130,6 +132,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-23: LinkedIn cadence agreed (3 a day, 15 a week; reposts, sales team and Zaelot page count); KPI 4 target set.*
 *Updated 2026-11-23: recruiting KPI defined (HR-approved LinkedIn posts). All six goals now have a KPI.*
 *Updated 2026-11-23: thought leadership KPI defined (posts per vertical: Travel, Snow Sports, Real Estate, Media and Entertainment).*
 *Updated 2026-11-23: nurture KPIs defined (newsletter recipients, LinkedIn post count).*
