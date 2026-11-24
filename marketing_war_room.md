@@ -84,10 +84,11 @@ Anything that doesn't fit these sections goes to the [brief](zaelot_marketing_br
 
 ## 4. Posts this week
 
-- **Zaelot page:** what posted since 11-23, with links? UNKNOWN until checked.
+- **Zaelot page:** what posted since 11-23, with links? UNKNOWN until checked. Check [Zaelot's LinkedIn posts](https://www.linkedin.com/company/zaelot/posts/?viewAsMember=true).
 - **Team posts:** first week of one post a day per contributor. Who posted, which topic, links? UNKNOWN until checked.
 - **Agentic Migrations article (Agustín):** target 11-24. Posted?
-- **Jeff's post:** posted?
+- **Jeff's post:** posted? Check [Jeff's LinkedIn activity](https://www.linkedin.com/in/galusha/recent-activity/all/).
+- **Jaki's posts:** posted? Check [Jaki's LinkedIn activity](https://www.linkedin.com/in/jakilevy/recent-activity/all/).
 
 ## 5. Interesting replies
 
@@ -129,7 +130,7 @@ Anything that doesn't fit these sections goes to the [brief](zaelot_marketing_br
 | 28 | Collect LinkedIn metrics monthly, first review in December | Marketing team | 11-23 | Open |
 | 29 | Build the content approval chart (topic reviewers) | Marketing team | 11-23 | Open |
 | 30 | Create public-facing versions of internal content | Marketing team | 11-23 | Open |
-| 31 | Fill in first touch for each client, brief section 2.1 | Sales owners | 11-23 | Open |
+| 31 | Fill in first touch for each client, brief section 2.1. 11-24: 19 of 20 filled from the 11-23 call; owners confirm names and years, Fora Travel open | Sales owners | 11-23 | Open |
 
 ## 7. Next steps
 

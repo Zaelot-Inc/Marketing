@@ -1,6 +1,6 @@
 # Zaelot Marketing Charter
 
-**Last Updated:** 2026-11-23
+**Last Updated:** 2026-11-24
 **Owner:** Jeff Galusha
 **Status:** DRAFT. Built from the 11-20 and 11-23 marketing calls and Jeff's decisions in chat. Each line is marked **Agreed** or **Proposed**. Nothing is final until Jeff signs off.
 
@@ -24,6 +24,29 @@ Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 | 4 | Nurture prospects and clients we already know | Two KPIs: (1) newsletter sent, number of people it went to; (2) number of LinkedIn posts, target 15 a week, 3 a day (Jeff, 11-23) |
 | 5 | Be thought leaders in our verticals | Number of posts per vertical: (1) Travel, (2) Snow Sports, (3) Real Estate, (4) Media and Entertainment (Jeff, 11-23) |
 | 6 | Serve recruiting: every Fryeah! talk becomes content (Jeff, 11-20) | HR-approved posts on LinkedIn (Jeff, 11-23) |
+
+### 2.1 LinkedIn baseline: Jeff and Zaelot
+
+The starting point the monthly metrics review measures against. Two different 12-month windows, both from LinkedIn analytics exports.
+
+| Metric | Jeff (personal profile) | Zaelot (company page) |
+|---|---|---|
+| Window | 2025-11-08 to 2026-11-07 | 2025-11-19 to 2026-11-18 |
+| Followers | 8,023 | 5,574 (+929 in the year) |
+| Impressions, 12 months | 72,078 (+56% vs prior year) | 194,643 total; 174,724 (89.8%) sponsored |
+| Organic impressions | 72,078 (paid share: UNKNOWN, not in the export) | 19,919, about 1,660 a month |
+| Members reached | 38,461 | UNKNOWN (not in the baseline) |
+| Engagements | 779: 666 reactions, 100 comments, 4 reposts, 8 saves, 1 send | 363: 330 reactions, 12 comments, 21 reposts |
+| Engagement rate (reactions + comments + reposts / impressions) | 1.07% (computed) | 1.80% on organic impressions; 0.19% on all impressions (computed) |
+| Posts | 46 in 2025, 40 in 2026 through 11-07 (calendar years; scraped feed) | 33 in the window, about 3 a month; Jaki authored 26 |
+| Profile or page visitors | 388 profile viewers, last 90 days | 965 page views, 396 unique visitors, last 30 days |
+| Audience | 39% in network, 61% out of network | Engineering and IT 44.0%; Uruguay and Argentina metros 31.9%; Director and above 6.9% |
+| Best post by impressions | "Travel Tech Video of the Year" video, 2025-11-08: 23,298 impressions, 8 reactions | Boosted Phocuswright post, 11-11: 183,619 impressions, 2 reactions |
+| Best organic post | France trip post, 2025-07-28: 5,605 impressions, 167 reactions, 20 comments | Digital Travel Connect wrap: 2,221 impressions, 49 reactions |
+| What works best | Personal and family posts: highest average impressions (2,922) | Partner and milestone news; image posts (3.04%) beat link posts (0.76%) |
+| Source | [Jeff's report](https://galusha-linkedin-report.vercel.app/), generated 2026-11-07 | [Zaelot baseline](<Linkedin - Social/Zaelot on LinkedIn_ 1 Year Review - Baseline.html>), collected 2026-11-20 |
+
+**Read it this way:** Jeff's profile gets more unpaid reach than the company page (72,078 impressions, none known to be sponsored, vs Zaelot's 19,919 organic), while the page's reach is mostly paid. Jaki's profile has no baseline yet (UNKNOWN). Whether personal profiles count toward marketing KPIs is open (brief, decision 2).
 
 ## 3. Channels
 
@@ -101,6 +124,7 @@ Full RACI draft: brief section 6.
 | [marketing_war_room.md](marketing_war_room.md) | Live meeting agendas, status, open action items. |
 | [marketing_war_room_history.md](marketing_war_room_history.md) | Archived sessions, verbatim. |
 | [zaelot_marketing_brief.md](zaelot_marketing_brief.md) | Reference: successful motions, LinkedIn baseline, content inventory, RACI draft, initiatives, events, calls on record. |
+| [Reports/](Reports/) | Monthly marketing report, one file per month (`YYYY-MM_marketing_monthly_report.md`), reviewed the first Friday of the next month. First: [October 2026](Reports/2026-10_marketing_monthly_report.md). |
 
 ## 9. Decision log
 
@@ -141,6 +165,8 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-24: Reports/ folder added to section 8 with the first monthly report (October 2026).*
+*Updated 2026-11-24: section 2.1 LinkedIn baseline table added for Jeff (report data, 2026-11-07) and Zaelot (page analytics, 2026-11-20).*
 *Updated 2026-11-24: "Posts this week" added to the standing agenda, before Interesting replies (Jeff).*
 *Updated 2026-11-23: LinkedIn newsletter added as Proposed (Jeff).*
 *Updated 2026-11-23: meeting days set to Monday, Wednesday, Friday (Jeff).*

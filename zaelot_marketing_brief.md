@@ -1,6 +1,6 @@
 # Zaelot Marketing Brief
 
-**Last Updated:** 2026-11-23
+**Last Updated:** 2026-11-24
 **Owner:** Jeff Galusha
 **Marketing calendar:** [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_d5f9ae49473766f07b343cfc79a81097c72353da22d2e4e41d2c7b566dd2b2a0@group.calendar.google.com&ctz=America/New_York)
 **Meetings:** [Marketing War Room](marketing_war_room.md), Mon, Wed, Fri, about 30 min (live agendas, open action items table, archive; Sales War Room template). Structure and decisions: [Zaelot Marketing Charter](zaelot_marketing_charter.md). This brief is reference.
@@ -9,7 +9,7 @@
 
 *Created 2026-11-20 from war room section 7 (Events and marketing) and its history, the `Marketing/` folder, `Marketing/Events/Hightouch Event/hackathon_luma_marketing_brief.md`, the Phocuswright blog drafts, and the artifacts and decks built this month. Every item says where it came from. Anything not sourced is UNKNOWN.*
 
-> **Headline:** Marketing has a long list of ideas and almost no owners or dates. What we have is good raw material: Phocuswright leads and two blog drafts, a travel-advisor innovation page, the Cruise Critic ticket-to-A/B-test case study, a public capabilities deck, and a design essay in progress. What's missing is a cadence and an approval process. The LinkedIn baseline (11-20) shows the page reaches people only when we pay: 89.8% of impressions were sponsored, posting is about 3 a month, and the followers are mostly engineers, not buyers. **First move: sign off on LinkedIn targets, decide who approves content, and ship the two Phocuswright posts while the show is fresh.** *11-23 follow-up call: reviewers now assigned by topic, Agustín owns a monthly Beacon newsletter, start at one LinkedIn post a day per contributor, and marketing meets Monday, Wednesday and Friday for 30 minutes (section 1; Jeff moved Tuesday to Wednesday 11-23).*
+> **Headline:** Marketing has a long list of ideas and almost no owners or dates. What we have is good raw material: Phocuswright leads and two blog drafts, a travel-advisor innovation page, the Cruise Critic ticket-to-A/B-test case study, a public capabilities deck, and a design essay in progress. What's missing is a cadence and an approval process. The LinkedIn baseline (11-20) shows the page reaches people only when we pay: 89.8% of impressions were sponsored, posting is about 3 a month, and the followers are mostly engineers, not buyers. **First move: sign off on LinkedIn targets, decide who approves content, and ship the two Phocuswright posts while the show is fresh.** *11-23 follow-up call: reviewers now assigned by topic, Agustín owns a monthly Beacon newsletter, start at one LinkedIn post a day per contributor, and marketing meets Monday, Wednesday and Friday for 30 minutes (section 1; Jeff moved Tuesday to Wednesday 11-23).* *Where clients come from (11-23 call, section 2.1): of 19 active clients covered, 7 came by referral, 5 from events, 2 through partners, 2 from outbound, and none inbound. Prospects still check our website and LinkedIn before they buy.*
 
 ---
 
@@ -53,7 +53,8 @@
 - **Next:** the call paused for the Friday session and resumed 11-23 (below).
 
 ### What we agreed 11-23 (Marketing Follow-up)
-- **Website and LinkedIn are where prospects check us out** before they engage, so both have to look current.
+- **Website and LinkedIn are where prospects check us out** before they engage, so both have to look current. Jeff, after going through every client's first touch: "in every case" they check the website and LinkedIn (section 2.1).
+- **Where clients came from:** referrals and events brought in 12 of the 19 active clients covered on the call; partners 2, outbound 2 (both emails to companies with a relevant opening), acquisition 1, recruiter 1, Slack community 1; none inbound. Detail per client in section 2.1.
 - **LinkedIn cadence:** three Zaelot-related posts a day across the team is the ideal; Germán warned a target of three may yield one. Agustín's proposal: start with **one post a day per contributor, about 200 words**. Contributors claim topics from a shared list so posts don't overlap. Comments on relevant high-visibility conversations count as activity. Useful perspective first, not service promotion.
 - **Who we want to reach:** companies already in HubSpot, then their decision-makers and likely internal champions (CFOs named as an example).
 - **Post style:** short and readable, the strongest line first, few emojis or icons. Reuse or repost what works.
@@ -73,7 +74,9 @@ What we did that actually landed a client. Write each one down so we can repeat 
 
 **Source of the list:** ZOps portfolio, 20 active client accounts, pulled 2026-11-23. Sales owner is the owner on the client's current SOWs in ZOps.
 
-**Why every source is UNKNOWN:** HubSpot has no lead-source field. Its automatic "Original Traffic Source" reads OFFLINE for almost every client company (checked 11-23), which tells us nothing. The sales owner is the only reliable source today.
+**How this was filled:** Jeff and Germán went through the list client by client on the 11-23 Marketing Follow-up (Fireflies `01M84YETC557TWHXXKRWVQ5VPG`, 16:00 to 20:33). HubSpot has no lead-source field, and its "Original Traffic Source" reads OFFLINE for almost every client (checked 11-23), so the call is the source. Names in quotes are as the transcript spelled them; the owner should confirm them. Years were not discussed.
+
+**Tally (19 of 20 covered; Tripadvisor and EWTN count under their first category):** Referral 7, Event 5, Outbound 2, Partner 2, Legacy 1, Recruiter 1, Community (Slack) 1. Not covered: Fora Travel.
 
 **Attribution categories** (pick one first touch per client):
 - **Event:** met at a conference or Zaelot event (name it)
@@ -83,33 +86,39 @@ What we did that actually landed a client. Write each one down so we can repeat 
 - **Outbound:** our LinkedIn or email outreach
 - **Inbound:** they found us (website, search, AI assistant, form)
 - **Legacy:** came with an acquisition or a book of business
+- **Recruiter:** a recruiting firm or revenue-share partner brought the client (added 11-24, Icelandair)
+- **Community (Slack):** an open community or Slack channel (added 11-24, Farwell)
 
 | Client | ZOps code | Sales owner | First touch (category) | Detail (who, which event or partner) | Year | Source |
 |---|---|---|---|---|---|---|
-| ALG | 4113 | Jeff | UNKNOWN | | | |
-| Alterra Mtn Co | 4155 | Jaki | UNKNOWN | | | |
-| Arkus | 4064 | Gastón | UNKNOWN | | | |
-| CHIME | 4046 | Germán | UNKNOWN | | | |
-| EWTN | 4114 | Jeff | UNKNOWN | | | |
-| Farwell | 4021 | Germán | UNKNOWN | | | |
-| Fora Travel | 4160 | Jeff | UNKNOWN | | | |
-| Guaranteed Rate | 4144 | Jeff | UNKNOWN | | | |
-| Icelandair | 4028 | Gastón | UNKNOWN | | | |
-| Inspire Energy | 4000 | Germán | UNKNOWN | | | |
-| Land Advisors | 4035 | Gastón | UNKNOWN | | | |
-| Lindblad | 4093 | Christian | UNKNOWN | | | |
-| Live.is | 4129 | Gastón | UNKNOWN | | | |
-| Menumodo | 4094 | Christian | UNKNOWN | | | |
-| Royal Caribbean | 4128 | Jeff | UNKNOWN | | | |
-| Situate | 4159 | Gastón | UNKNOWN | | | |
-| Snow Partners (Snowcloud) | 4110 | Jaki | UNKNOWN | | | |
-| Teaching Strategies | 4007 | Germán | UNKNOWN | | | |
-| Tripadvisor (incl. Cruise Critic) | 4119 | Jeff | Event (Tripadvisor); Referral (Cruise Critic, referred by Tripadvisor) | Which conference: UNKNOWN | UNKNOWN | Fireflies 11-23 |
-| Zapier | 4162 | Jeff | Partner | A partner recommended Zaelot; which partner: UNKNOWN | UNKNOWN | Fireflies 11-23 |
+| ALG | 4113 | Jeff | Event | San Diego Digital Travel Connect (Jeff) | UNKNOWN | [Fireflies 11-23, 16:00](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=960) |
+| Alterra Mtn Co | 4155 | Jaki | Partner | Introduced by Hightouch (Jeff) | UNKNOWN | [Fireflies 11-23, 16:09](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=969) |
+| Arkus | 4064 | Gastón | Referral | Avelino brought it in (Germán) | UNKNOWN | [Fireflies 11-23, 16:29](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=989) |
+| CHIME | 4046 | Germán | Legacy | Came with the acquisition of Axon Consulting (Germán) | UNKNOWN | [Fireflies 11-23, 16:36](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=996) |
+| EWTN | 4114 | Jeff | Referral and Event | Referral from someone we met at a conference; which conference: UNKNOWN (Jeff) | UNKNOWN | [Fireflies 11-23, 16:48](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1008) |
+| Farwell | 4021 | Germán | Community (Slack) | An open Slack channel where people posted positions; the only client from it (Germán). Jeff: "kind of like a conference", then we met them | UNKNOWN | [Fireflies 11-23, 17:02](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1022) |
+| Fora Travel | 4160 | Jeff | UNKNOWN | Not covered on the call | UNKNOWN | Fireflies 11-23 (not discussed) |
+| Guaranteed Rate | 4144 | Jeff | Event | A conference; which one: UNKNOWN (Jeff) | UNKNOWN | [Fireflies 11-23, 17:26](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1046) |
+| Icelandair | 4028 | Gastón | Recruiter | Iceland recruiters couldn't fill Icelandair roles, so Zaelot signed a revenue-share deal with them (Germán). The recruiters found us through "Shefford" (transcript spelling; verify) | UNKNOWN | [Fireflies 11-23, 17:33](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1053) |
+| Inspire Energy | 4000 | Germán | Outbound | They posted on LinkedIn; we emailed that we had developers (Germán: "I believe") | UNKNOWN | [Fireflies 11-23, 18:13](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1093) |
+| Land Advisors | 4035 | Gastón | Referral | Client referral from "Sicilian Partners" (transcript spelling; verify); the Land Advisors owner is an investor there (Germán) | UNKNOWN | [Fireflies 11-23, 18:22](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1102) |
+| Lindblad | 4093 | Christian | Referral | Through "Gongburg" (transcript spelling; who: verify) (Jeff) | UNKNOWN | [Fireflies 11-23, 18:41](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1121) |
+| Live.is | 4129 | Gastón | Event | Through "Gamber" (transcript spelling; verify), when John worked for Zaelot going to events and knocking on doors (Germán) | UNKNOWN | [Fireflies 11-23, 18:47](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1127) |
+| Menumodo | 4094 | Christian | Referral | The owner knows "Hadley" (transcript spelling; verify) from events and reached out to us (Germán) | UNKNOWN | [Fireflies 11-23, 19:10](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1150) |
+| Royal Caribbean | 4128 | Jeff | Referral | A friend of Jeff's (Jeff) | UNKNOWN | [Fireflies 11-23, 19:24](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1164) |
+| Situate | 4159 | Gastón | Referral | Referral from "Felt" (transcript spelling; verify) (Germán) | UNKNOWN | [Fireflies 11-23, 19:28](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1168) |
+| Snow Partners (Snowcloud) | 4110 | Jaki | Event | Jaki, at a conference; which one: UNKNOWN (Jeff) | UNKNOWN | [Fireflies 11-23, 19:37](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1177) |
+| Teaching Strategies | 4007 | Germán | Outbound | The company had an opening; we researched it and emailed the right person (Germán) | UNKNOWN | [Fireflies 11-23, 19:44](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1184) |
+| Tripadvisor (incl. Cruise Critic) | 4119 | Jeff | Event (Tripadvisor); Referral (Cruise Critic) | Tripadvisor through a conference (which: UNKNOWN). Cruise Critic: referral from someone who worked at Tripadvisor (Jeff) | UNKNOWN | [Fireflies 11-23, 20:00](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1200) |
+| Zapier | 4162 | Jeff | Partner | A partner recommended us; which partner: UNKNOWN (Jeff) | UNKNOWN | [Fireflies 11-23, 20:27](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1227) |
 
-**Where past clients came from, in general (11-23 call, not tied to specific clients):** conference introductions, partner referrals, client referrals, acquisitions, recruiters, Slack communities, and targeted cold outreach to companies with relevant job openings. Some accounts grew out of existing relationships, not marketing. Add "Recruiter" and "Community (Slack)" as categories if a client fits them.
+**Not in the ZOps list:** Bokun (transcript "Boken"): a referral from Icelandic friends; they also validated us internally (Jeff, [20:13](https://app.fireflies.ai/view/01M84YETC557TWHXXKRWVQ5VPG?t=1213)).
 
-**Next step (proposed):** each sales owner fills in their rows. Agenda item for the next session: whether to add a "Lead source" property in HubSpot so new deals carry this from day one (a HubSpot settings change; needs admin OK).
+**What it says for marketing (Jeff, 20:34):** in every case the client checks our website and LinkedIn before buying, so both matter even when the first touch is a referral or an event.
+
+**Where past clients came from, in general (11-23 call, not tied to specific clients):** conference introductions, partner referrals, client referrals, acquisitions, recruiters, Slack communities, and targeted cold outreach to companies with relevant job openings. Some accounts grew out of existing relationships, not marketing. "Recruiter" and "Community (Slack)" are now categories (11-24).
+
+**Next step:** owners confirm their rows, the quoted names, and the year; Jeff fills in Fora Travel. Agenda item for the next session: whether to add a "Lead source" property in HubSpot so new deals carry this from day one (a HubSpot settings change; needs admin OK).
 
 ### 2.2 Motions that landed a client
 
@@ -118,6 +127,15 @@ One row per win, written as a repeatable motion.
 | Client | How it started | What we did, in order | First touch to signed | What made it work | Repeatable as | Owner | Source |
 |---|---|---|---|---|---|---|---|
 | *(none recorded yet)* | | | | | | | |
+
+**Motions seen in section 2.1 (11-23 call; the steps after first touch are UNKNOWN, so no rows above yet):**
+- **Referral (7 clients):** friends, clients and investors who know us: Arkus, EWTN, Land Advisors, Lindblad, Menumodo, Royal Caribbean, Situate, plus Cruise Critic inside Tripadvisor.
+- **Event (5):** ALG (San Diego Digital Travel Connect), Guaranteed Rate, Live.is, Snow Partners, Tripadvisor. EWTN also started at a conference.
+- **Partner intro (2):** Alterra (Hightouch), Zapier (partner not named).
+- **Outbound to a relevant opening (2):** Inspire Energy and Teaching Strategies. The company posted a need; we researched it and emailed the right person.
+- **Other (3):** CHIME (Axon Consulting acquisition), Icelandair (Iceland recruiters, revenue share), Farwell (open Slack channel).
+
+Whoever owns each win fills in the row above: what we did after first touch, time to signed, and what made it work.
 
 ### 2.3 Marketing motions that worked before
 
@@ -195,6 +213,7 @@ Whether personal profiles count toward marketing metrics is open decision 2.
 | Month | Posts | Median impressions | Top post | Engagement rate | Meetings from LinkedIn | Notes |
 |---|---|---|---|---|---|---|
 | Baseline (12 mo to 11-18) | 33 (about 3/mo) | 479 organic | DTC San Diego wrap (2,221 impr., 49 reactions) | 1.80% organic | Not tracked | 89.8% of impressions sponsored |
+| 2026-10 | Page 7; Jeff UNKNOWN | Page 539 (5 original posts); Jeff account 19,709 impressions | Page: Esri partner (758 impr.); Jeff: family movie post (15,746 impr.) | Page 3.61% (computed, original posts); Jeff 0.89% | Not tracked | [October report](Reports/2026-10_marketing_monthly_report.md), rebuilt from baselines |
 | 2026-11 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | First monthly pull due early December |
 
 ---
@@ -264,7 +283,7 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 - [ ] **Beacon audience:** which HubSpot contacts get the monthly newsletter; Jeff and Jaki help Agustín. (11-23)
 - [ ] **Website:** who owns the remaining sections; copy changes or visuals only? (11-23)
 - [ ] **LinkedIn newsletter:** package posts into a LinkedIn newsletter and ask people to subscribe (decision 11). (Jeff, 11-23)
-- [ ] **Client attribution:** sales owners fill in section 2.1 (first touch for each of the 20 active clients). Decide whether to add a "Lead source" property in HubSpot so new deals carry it. (11-23)
+- [ ] **Client attribution:** 19 of 20 filled in section 2.1 from the 11-23 call (11-24); owners confirm names and years, Fora Travel still UNKNOWN. Decide whether to add a "Lead source" property in HubSpot so new deals carry it. (11-23)
 
 ---
 
@@ -391,13 +410,14 @@ The "Marketing angle" column is a proposal, not agreed. The baseline gap these f
 | 22 | **LinkedIn company follows** | Page followed only Sabre, OpenAI, Cloudinary; add companies from HubSpot | Agustín | In progress | 11-23: 277 Phocuswright companies followed, page now follows 278 (Jeff). Next: HubSpot companies | Fireflies 11-23 |
 | 23 | **Agentic Migrations article** | Ramiro's draft, adapted to the blog template, then LinkedIn | Agustín | In review 11-23 | Publish and share | Fireflies 11-23 |
 | 24 | **Recurring marketing meetings** | Mon, Wed, Fri, about 30 minutes | Agustín (invite) | Agreed 11-23 | Send the invite | Fireflies 11-23 |
+| 25 | **Client source tracking** | First touch for every active client (section 2.1), then a "Lead source" property in HubSpot so new deals carry it | Sales owners (rows); HubSpot admin (property) | 19 of 20 filled 11-24 from the 11-23 call | Owners confirm names and years; Jeff fills Fora Travel; decide on the HubSpot property (needs admin OK) | Fireflies 11-23 |
 | 20 | **Fryeah! talks as content** | Every Fryeah! staff presentation becomes content (post, clip, blog). Each one serves two audiences: the industries we sell to, and recruiting | UNKNOWN | Agreed by Jeff 11-20 ("they are gold") | Name an owner; agree a format per talk (for example a short clip plus a LinkedIn post); get presenter OK before publishing | Jeff 11-20 |
 
 ---
 
 ## 8. Events
 
-Event detail and costs stay in war room section 7. Marketing's job is the follow-up content and campaign for each.
+Event detail and costs stay in war room section 7. Marketing's job is the follow-up content and campaign for each. Events are the second-biggest source of current clients: 5 of 19 started at one, and EWTN started with a referral from someone met at a conference (section 2.1).
 
 | Event | Dates | Who | Marketing follow-up |
 |---|---|---|---|
@@ -457,6 +477,7 @@ Budget: Gaston proposed $10,000 for November and $10,000 for December events; ap
 - [ ] Send the HubSpot event follow-up campaign and load the Lake Placid contacts, Jaki (Fireflies 11-10)
 - [ ] Draft the first professional-services sales post, Jeff (Fireflies 11-10)
 - [ ] Talk to Emma about a detailed Land Advisors write-up, Jaki (Fireflies 11-10)
+- [ ] Confirm section 2.1 client sources: names transcribed as "Shefford", "Sicilian Partners", "Gongburg", "Gamber", "Hadley", "Felt"; years for all; Fora Travel's first touch. Sales owners, Jeff (11-24)
 
 ## 11. Calls on record
 
@@ -603,6 +624,9 @@ The Sheet counts each month's actuals from its Content Log (items marked Done). 
 *Sources: `war_room/sales_war_room.md` section 7 and history (11-06, 11-11, 11-18); `Marketing/` folder; `Marketing/Website/ChatGPT-Agent/Zaelot-ChatGPT-Agent-Brief.md`; `Marketing/Conferences 2026/Jaki/NSAA_2026_followup/README.md`; `Marketing/Events/Hightouch Event/hackathon_luma_marketing_brief.md`; Phocuswright blog drafts and Grok Bot report (11-19); HubSpot social analytics check (11-20).*
 
 ## Update Log
+*Updated 2026-11-24: October 2026 row added to the section 3 monthly log, linking the first monthly report (Reports/).*
+*Updated 2026-11-24: client sources carried through the brief: headline, section 1 (what we agreed 11-23), section 2.2 (motions seen), section 8 (events), initiative 25, open items.*
+*Updated 2026-11-24: section 2.1 first touch filled for 19 of 20 clients from the 11-23 Marketing Follow-up (Fireflies 16:00 to 20:33), with timestamped links; added Recruiter and Community (Slack) categories, a tally, and Bokun. Fora Travel not covered.*
 *Updated 2026-11-23: LinkedIn newsletter research added (`Linkedin - Social/linkedin_newsletter_research.md`), linked from decision 11.*
 *Updated 2026-11-23: Jeff proposed a LinkedIn newsletter that packages our posts and asks people to subscribe; decision 11, agenda item, war room idea.*
 *Updated 2026-11-23: meetings are Monday, Wednesday, Friday (Jeff); the 11-24 agenda is now Wednesday 11-25.*
