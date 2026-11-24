@@ -442,7 +442,7 @@ No email found: Mike King (DataArt, per Jeff's export), Kurien Jacob (Highgate T
 | Person | Company | What happened | Status |
 |---|---|---|---|
 | Jason Young, CEO | Northstar Travel Group | Wants to make Phocuswright "the Bloomberg of travel intel": a portal where subscribers get everything. Strong build prospect. Jeff has his card. Roberta Muller (SVP Product Development) and Joe D'Andrea (SVP Digital) likely involved; not met | Draft ready, not sent |
-| Dermot Quigley, CEO | Hotel Trader | B2B hotel distribution, building The Exchange; wants more "10x engineers" on a team of about 50 in Hyderabad. Also spoke on the Hospitality AI roundtable (Fireflies) | Draft ready, email address needed |
+| Dermot Quigley, CEO | Hotel Trader | B2B hotel distribution, building The Exchange; wants more "10x engineers" on a team of about 50 in Hyderabad. Also spoke on the Hospitality AI roundtable (Fireflies) | Email sent 2026-11-23 |
 | Naveen Gunti, Chief AI and Technology Officer; Nipun Joshi, AVP Product and AI Experiences; Leon Mulder | Fareportal | Met the Fareportal team. (Mike King, who recommended the GBTA Convention, is DataArt per his badge, not Fareportal.) Jaki owns the Fareportal record; tell Jaki before any follow-up | Met, follow-up not drafted |
 | Marc Harrison, Founder and CEO | TRIPCREATOR AI (exhibitor) | Recommended the USTOA conference | Met, follow-up not drafted |
 | Ankur Randev, Principal and CCO | Highgate | Hallway chat after the Hospitality AI roundtable; see Highgate brief | Met, follow-up not drafted |
@@ -453,8 +453,24 @@ No email found: Mike King (DataArt, per Jeff's export), Kurien Jacob (Highgate T
 
 **Drafts (from the report, not sent):**
 
-*Dermot Quigley, Hotel Trader. Subject: Great meeting you at Phocuswright. Sent status: NOT SENT. Email: dermot@hoteltrader.com (Clay, unverified)*
+*Dermot Quigley, Hotel Trader. Subject: Great meeting you at Phocuswright. Sent status: SENT by Jeff, 2026-11-23 10:05 PM ET (Gmail). The text Jeff actually sent is below the original draft. Email: dermot@hoteltrader.com (Clay, unverified)*
 > Hi Dermot, Great meeting you at Phocuswright. I enjoyed hearing how Hotel Trader is building The Exchange, and that you're focused on getting more 10x engineers onto your team of about 50 in Hyderabad. That's where Zaelot can help. We embed remote designers and engineers on travel teams, and our engineers work AI-first, using AI tools to ship faster and building AI features into the products themselves. Would you be open to a 30-minute call in the next couple of weeks? I'd love to show you how we're using AI and hear where you're headed next. Best, Jeff
+
+*As sent (Gmail, subject "Great meeting you at the roundtable at Phocuswright", with an image of the slow-booking-flow selling project):*
+> Hi Dermot,
+>
+> Great meeting you at Phocuswright. I enjoyed hearing how Hotel Trader is building The Exchange, and that you're focused on getting more 10x engineers onto your team of about 50 in Hyderabad. I got the feeling that you didn't need additional external innovation.
+>
+> However, I wanted to mention that if you ever need more US timezone personnel, I hope you'll consider us.
+>
+> We embed remote designers and engineers on travel teams. Our engineers work AI-first, and have significant innovation around the quirks of travel. This includes a project around selling when your booking flow is slow:
+>
+> [image]
+>
+> Would you be open to a 30-minute call in the next couple of weeks? I'd love to show you how we're using AI and hear where you're headed next.
+>
+> Thanks!
+> Jeff
 
 *Jason Young, Northstar Travel Group. Sent status: NOT SENT. Email: jyoung@northstartravelgroup.com (Clay, unverified)*
 > Hi Jason, great meeting you at Phocuswright. Your idea of making Phocuswright the Bloomberg of travel intel really stuck with me. At Zaelot we embed remote designers and engineers on travel teams, and a subscriber portal like that is right in our wheelhouse. Could we find 30 minutes after the show to talk through the build?
@@ -475,12 +491,25 @@ No email found: Mike King (DataArt, per Jeff's export), Kurien Jacob (Highgate T
 
 **Open from the report:** rewrite the Naveen Gunti note as a post-meeting follow-up (do not send the pre-meeting "Tuesday or Wednesday" version); draft follow-ups for Nipun Joshi, Marc Harrison and Ankur Randev; decide on adding Chris Ashley and Heather Dahl as targets; a follow-up to Propellic session attendees (recipients not chosen); and a request to "continue to connect participants with the message I'm providing" that still needs clarifying (which people, which message).
 
+### Swapcard connections and HubSpot import (2026-11-24)
+Source: two files Jeff exported 11-24 into the Phocuswright_2026 folder: `Phocuswright-Connections-2026-11-24.csv` (82 Swapcard connections, all with self-provided emails, 16 with phones; 37 on the target list, 45 not) and `Phocuswright-Targets-2026-11-24.csv` (same 135 targets as 11-23 plus Swapcard status, bio, location and card link). Merged into V3: 26 new rows, 78 emails, 18 phones, 63 LinkedIn profiles; new columns swapcard_status, swapcard_card_url, location, bio. Target statuses in the 11-24 file are unchanged from 11-23; V3 keeps the newer ones (Amy and Dermot emails sent 11-23).
+
+**Swapcard status of targets:** 37 Connected, 95 Not connected (the 11-19 batch requests are mostly not accepted), 3 Not found (Nowell Outlaw, Roberta Muller, Dfinitiv).
+
+**Corrections from the connections file:** Chris Ashley's email is chris@trustpixel.ai (the Clay guess chris@inklink.com was wrong). Daud Grewal is daud@tripshepherd.com (already in HubSpot, owned by Jeff; the phone entry had a typo). Atlas Chen is at Voyada (atlas.c@voyada.com, Markham), not Travelfusion.
+
+**Notable connections not on the target list:** Bob Kaufman, Co-Founder and CEO, Voyani (in HubSpot as Robert Kaufman, created 11-19, owned by Jaki Levy). Scott Marean, COO, Fareportal. Gareth Tedford, VP Strategy and Growth, Coforge (Sabre's engineering incumbent). Gabi Figueroa and Sam Krichevsky, Swivul (Jeff's favorite Launch pitch). Tim Howard, Chief Partner Officer, SiteMinder. Whitnee Hawthorne, Snowflake (already in HubSpot).
+
+**HubSpot:** the HubSpot connector has no write access to contacts, companies or notes (REQUIRES_PERMISSION_MODIFICATION, checked 11-24), so nothing was written. Instead: `Phocuswright_2026_HubSpot_Import_New_Contacts_2026-11-24.csv`, 78 contacts not yet in HubSpot (checked by email), owner Jeff, for HubSpot's contact import. 14 are people Jeff met. Already in HubSpot and left out: Jeff's (Mohit Kumar, Andrew Spektor, Thia Gnanakumaran, Shir Ibgui, Jeff Urban, Whitnee Hawthorne, Naveen Gunti, Daud Grewal), Jaki's (Bob Kaufman/Voyani, Matteo Cappelleti, Lorena Palmer, Andrew Lockhead, Nipun Joshi, created 11-24), and Ingvi's (inactive owner: Davíð Gunnarsson, Dohop). Left out on purpose: partners@dfinitiv.io (company line), personal gmail for Edoardo Panichi, a second Tripsetta address for Lola Cee.
+
 ### Follow-ups (drafted here after the event)
 None yet.
 
 ---
 
 ## Update Log
+*Updated 2026-11-24: merged Swapcard connections (82) and the 11-24 target file into V3; built a HubSpot import file of 78 new contacts (connector has no write access); fixed Chris Ashley, Daud Grewal and Atlas Chen details.*
+*Updated 2026-11-23: Jeff sent the follow-up email to Dermot Quigley (Hotel Trader); as-sent text recorded under the draft (angle: US time zone coverage next to the Hyderabad team). Also sent the engineering and major-clients email to Amy Carey-Dejanovich (Sabre); details in the Sabre brief.*
 *Updated 2026-11-18 (16): Launch stage summary created (Phocuswright_2026_Launch_Stage_Pitches.md: 12 pitches, judge questions, classification; Jeff liked Swivul). Two blog drafts in blog_drafts/ (Launch stage judge questions; Steve Singh interview). Not published.*
 *Updated 2026-11-18 (15): client briefs created for today's top leads: SQL_Galusha/Sabre/amy_carey-dejanovich_sabre_brief.md, SQL_Galusha/Northstar/jason_young_northstar_brief.md, SQL_Galusha/Fareportal/naveen_gunti_fareportal_brief.md (Jaki owns the Fareportal company record). Amy's session sign-ups for 11-18 and 11-19 recorded in the Sabre brief.*
 *Updated 2026-11-18 (14): TPI client brief created at SQL_Galusha/Travel_Planners_International/jenn_lee_travel_planners_international_brief.md; lunch today with Ken Gagliano, Elisabeth McGuire and Louis Velazquez. TPI attendees in the app also include Dennis Aguilar (Sr VP Business Operations).*

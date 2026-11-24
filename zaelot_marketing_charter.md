@@ -31,7 +31,7 @@ Each goal gets a KPI. **Agreed** 11-23. Numbers: UNKNOWN until set.
 
 | Channel | Its job |
 |---|---|
-| LinkedIn (company page and personal profiles) | Awareness and credibility. Prospects check it, and the website, before they engage. |
+| LinkedIn (company page and personal profiles) | Awareness and credibility. Prospects check it, and the website, before they engage. **Proposed** (Jeff, 11-23): package our posts into a weekly LinkedIn newsletter and ask people to subscribe; most are weekly. |
 | Email to leads and clients (HubSpot) | Nurture. Includes the monthly Zaelot Beacon newsletter. |
 | Event outreach | Win conferences. Follow-up matches the event: broad email for big shows, personal follow-up for small ones. Event owner decides. |
 | Email to partners (HubSpot) | Keep partners informed. More customized than Beacon. |
@@ -42,7 +42,7 @@ Open: Substack, Instagram, video (brief decisions 3 and 10).
 
 ## 4. Cadence
 
-- **Marketing meetings:** Monday, Tuesday, Friday, about 30 minutes, same time each day. **Agreed** 11-23; Jeff to confirm the days. Run on the Sales War Room template in [marketing_war_room.md](marketing_war_room.md). **Agreed** (Jeff, 11-23). Standing agenda: Upcoming marketing, Ideas for posts, Ideas for emails, Interesting replies, Open action items, Next steps. **Agreed** (Jeff, 11-23).
+- **Marketing meetings:** Monday, Wednesday, Friday, about 30 minutes, same time each day. **Agreed** (Jeff, 11-23; replaces Monday, Tuesday, Friday from the 11-23 call). Run on the Sales War Room template in [marketing_war_room.md](marketing_war_room.md). **Agreed** (Jeff, 11-23). Standing agenda: Upcoming marketing, Ideas for posts, Ideas for emails, Posts this week, Interesting replies, Open action items, Next steps. **Agreed** (Jeff, 11-23; Posts this week added by Jeff, 11-24).
 - **LinkedIn:** 3 posts a day by Zaelot, 15 posts a week. Any of three count: (1) reposts, (2) posts by anyone on the sales team, (3) posts by the Zaelot company page. **Agreed** (Jeff, 11-23).
   - Earlier proposal, superseded: one post a day per contributor, about 200 words, to start; three a day across the team as the ideal; contributors claim topics from a shared list. Proposed 11-23 (Agustín, Germán). The shared topic list and the 200-word length still stand as working practice unless Jeff says otherwise.
 - **End of every meeting:** an email summary of the meeting, generated with Fireflies. **Agreed** (Jeff, 11-23). Recipients and who sends it: UNKNOWN.
@@ -108,6 +108,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 
 | Date | Decision | Who | Source |
 |---|---|---|---|
+| 2026-11-23 | Meet Monday, Wednesday, Friday (not Tuesday) | Jeff | Chat |
 | 2026-11-23 | Company page follows: Agustín and Jeff | Jeff | Chat |
 | 2026-11-23 | Marketing owner is Germán; final content approver by topic: Travel Jeff, Technology Christian, Adventure Sports and Non-Profit Jaki, CRM Gastón, Real Estate Emma, HR Virginia, Fryeah! Agustín | Jeff | Chat |
 | 2026-11-23 | Metrics review: first Friday of every month | Jeff | Chat |
@@ -126,6 +127,7 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-23 | Agustín expands the company page follows from HubSpot companies | Team | Fireflies 11-23 |
 | 2026-11-23 | Jeff and Jaki help Agustín pick the Beacon audience | Team | Fireflies 11-23 |
 | 2026-11-23 | Standing agenda for every session: Upcoming marketing, Ideas for posts, Ideas for emails, Interesting replies, then Open action items and Next steps | Jeff | Via Jefe MPM |
+| 2026-11-24 | Add "Posts this week" to the standing agenda, before Interesting replies | Jeff | Chat |
 | 2026-11-23 | One Zaelot Marketing Charter document holds structural decisions | Jeff | Chat |
 | 2026-11-23 | Marketing meetings run as the Marketing War Room, on the Sales War Room template | Jeff | Chat |
 | 2026-11-23 | Meet Monday, Tuesday, Friday, about 30 minutes | Team | Fireflies 11-23 |
@@ -139,6 +141,9 @@ Newest first. One line per structural decision: date, decision, who, source.
 | 2026-11-20 | Channels decision is not Jeff's call | Jeff | Chat |
 
 ## Update Log
+*Updated 2026-11-24: "Posts this week" added to the standing agenda, before Interesting replies (Jeff).*
+*Updated 2026-11-23: LinkedIn newsletter added as Proposed (Jeff).*
+*Updated 2026-11-23: meeting days set to Monday, Wednesday, Friday (Jeff).*
 *Updated 2026-11-23: Jeff added to company page follows.*
 *Updated 2026-11-23: marketing owner set to Germán; final content approvers by topic agreed (7 topics).*
 *Updated 2026-11-23: metrics review set to the first Friday of every month.*
